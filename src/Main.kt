@@ -1,3 +1,4 @@
+import arrays.TwoSun
 import arrays.ValidSubsequence
 
 class Main {
@@ -12,6 +13,7 @@ class Main {
     fun initArrayProblems() {
         val array = listOf(5, 1, 22, 25, 6, -1, 8, 10)
         val sequence = listOf(1, 6, -1, 10)
-        print(ValidSubsequence().isValidSubsequence(array, sequence))
+        //print(ValidSubsequence().isValidSubsequence(array, sequence))
+        print(TwoSun().twoSum(array, 6))
     }
 }
