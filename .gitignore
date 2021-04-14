@@ -24,5 +24,10 @@ hs_err_pid*
 Coding.iml
 .idea
 out
+.idea/misc.xml
+.idea/modules.xml.xml
+.idea/vcs.xml.xml
+.idea/workspace.xml.xml
+
 
 
