@@ -1,3 +1,4 @@
+import arrays.SortedSquaresArray
 import arrays.TwoSun
 import arrays.ValidSubsequence
 
@@ -14,6 +15,9 @@ class Main {
         val array = listOf(5, 1, 22, 25, 6, -1, 8, 10)
         val sequence = listOf(1, 6, -1, 10)
         //print(ValidSubsequence().isValidSubsequence(array, sequence))
-        print(TwoSun().twoSum(array, 6))
+        //print(TwoSun().twoSum(array, 6))
+
+        val problem = SortedSquaresArray()
+        problem.solve()
     }
 }
