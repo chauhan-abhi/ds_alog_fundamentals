@@ -45,7 +45,7 @@ class TournamentWinner : Problem {
         val map = mutableMapOf<String, Int>()
         var winnerTeam = ""
         var currentScore = 0
-        var updatedScore: Int
+        var updatedScore = 0
         for(index in competition.indices) {
             val home = competition[index].first
             val away = competition[index].second
@@ -58,6 +58,7 @@ class TournamentWinner : Problem {
                 winnerTeam = currentWinningTeam
             }
         }
+        print(map)
         print("$winnerTeam -> $currentScore")
         return winnerTeam
     }
