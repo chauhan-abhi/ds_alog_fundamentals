@@ -1,4 +1,5 @@
 import arrays.SortedSquaresArray
+import arrays.TournamentWinner
 import arrays.TwoSun
 import arrays.ValidSubsequence
 
@@ -17,7 +18,9 @@ class Main {
         //print(ValidSubsequence().isValidSubsequence(array, sequence))
         //print(TwoSun().twoSum(array, 6))
 
-        val problem = SortedSquaresArray()
-        problem.solve()
+        //val problem = SortedSquaresArray()
+        //problem.solve()
+        val tournament: Problem = TournamentWinner()
+        tournament.solve()
     }
 }
