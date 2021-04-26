@@ -1,7 +1,4 @@
-import arrays.SortedSquaresArray
-import arrays.TournamentWinner
-import arrays.TwoSun
-import arrays.ValidSubsequence
+import arrays.*
 
 class Main {
     companion object {
@@ -20,7 +17,10 @@ class Main {
 
         //val problem = SortedSquaresArray()
         //problem.solve()
-        val tournament: Problem = TournamentWinner()
-        tournament.solve()
+        //val tournament: Problem = TournamentWinner()
+        //tournament.solve()
+
+        val problem = NonConstructibleChange()
+        problem.solve()
     }
 }
