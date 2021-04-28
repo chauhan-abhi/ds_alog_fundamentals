@@ -1,9 +1,10 @@
 import arrays.*
+import trees.ClosestValue
 
 class Main {
     companion object {
         @JvmStatic
-        fun main (args: Array<String>) {
+        fun main(args: Array<String>) {
             val main = Main()
             main.initArrayProblems()
         }
@@ -14,13 +15,11 @@ class Main {
         val sequence = listOf(1, 6, -1, 10)
         //print(ValidSubsequence().isValidSubsequence(array, sequence))
         //print(TwoSun().twoSum(array, 6))
-
         //val problem = SortedSquaresArray()
-        //problem.solve()
         //val tournament: Problem = TournamentWinner()
-        //tournament.solve()
 
-        val problem = NonConstructibleChange()
+        //val problem = NonConstructibleChange()
+        val problem = ClosestValue()
         problem.solve()
     }
 }
