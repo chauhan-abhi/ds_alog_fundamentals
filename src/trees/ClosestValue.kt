@@ -12,27 +12,19 @@ import kotlin.math.abs
 * that is closest to the target
 * */
 
-class ClosestValue : Problem {
-
-    class TreeNode(var value: Int) {
-        var left: TreeNode? = null
-        var right: TreeNode? = null
-    }
+class ClosestValue : BaseTreeProblem(), Problem {
 
     var closest = Int.MAX_VALUE
 
     override fun solve() {
-        val root = TreeNode(5)
-        root.left = TreeNode(4)
-        root.right = TreeNode(9)
-        root.left?.left = TreeNode(2)
-        root.right?.left = TreeNode(8)
-        root.right?.right = TreeNode(10)
+        val root = getTree()
         val target = 5.0
         closest = root.value
         computeClosestElementInBST(root, target)
         print(closest)
     }
+
+    override fun getTree(): TreeNode = TreeUtils.getTestTree()
 
     private fun computeClosestElementInBST(root: TreeNode?, target: Double) {
         if (root == null) return
