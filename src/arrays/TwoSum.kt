@@ -1,6 +1,8 @@
 package arrays
 
-class TwoSun {
+import Problem
+
+class TwoSum: Problem {
 
     fun twoSum(list: List<Int>, sum: Int): List<Int> {
         var diff: Int
@@ -11,5 +13,10 @@ class TwoSun {
             else map.add(element)
         }
         return listOf()
+    }
+
+    override fun solve() {
+        val array = listOf(5, 1, 22, 25, 6, -1, 8, 10)
+        print(twoSum(array, 6))
     }
 }

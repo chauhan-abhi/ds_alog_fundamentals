@@ -14,6 +14,11 @@ import kotlin.math.abs
 
 class ClosestValue : Problem {
 
+    class TreeNode(var value: Int) {
+        var left: TreeNode? = null
+        var right: TreeNode? = null
+    }
+
     var closest = Int.MAX_VALUE
 
     override fun solve() {

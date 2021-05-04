@@ -1,5 +1,6 @@
 import arrays.*
 import trees.ClosestValue
+import java.util.*
 
 class Main {
     companion object {
@@ -7,19 +8,20 @@ class Main {
         fun main(args: Array<String>) {
             val main = Main()
             main.initArrayProblems()
+            main.initTreeProblems()
         }
     }
 
-    fun initArrayProblems() {
-        val array = listOf(5, 1, 22, 25, 6, -1, 8, 10)
-        val sequence = listOf(1, 6, -1, 10)
-        //print(ValidSubsequence().isValidSubsequence(array, sequence))
-        //print(TwoSun().twoSum(array, 6))
-        //val problem = SortedSquaresArray()
-        //val tournament: Problem = TournamentWinner()
-
-        //val problem = NonConstructibleChange()
+    private fun initTreeProblems() {
         val problem = ClosestValue()
         problem.solve()
+    }
+
+    fun initArrayProblems() {
+        // val problem = SortedSquaresArray()
+        // val problem = ValidSubsequence()
+        // val problem = TwoSun()
+        // val problem = TournamentWinner()
+        // problem.solve()
     }
 }
