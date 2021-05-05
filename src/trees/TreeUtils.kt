@@ -11,3 +11,11 @@ object TreeUtils {
         return root
     }
 }
+/*
+*         5
+*        / \
+*       4   9
+*      /   / \
+*     2   8   10
+*
+* */
