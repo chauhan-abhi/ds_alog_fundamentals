@@ -1,6 +1,7 @@
 import arrays.*
 import trees.BranchSum
 import trees.ClosestValue
+import trees.NodeDepth
 import java.util.*
 
 class Main {
@@ -15,7 +16,8 @@ class Main {
 
     private fun initTreeProblems() {
         //val problem = ClosestValue()
-        val problem = BranchSum()
+        //val problem = BranchSum()
+        val problem = NodeDepth()
         problem.solve()
     }
 
