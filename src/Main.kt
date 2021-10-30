@@ -17,8 +17,8 @@ class Main {
     private fun initTreeProblems() {
         //val problem = ClosestValue()
         //val problem = BranchSum()
-        val problem = NodeDepth()
-        problem.solve()
+        //val problem = NodeDepth()
+        //problem.solve()
     }
 
     fun initArrayProblems() {
@@ -26,6 +26,8 @@ class Main {
         // val problem = ValidSubsequence()
         // val problem = TwoSun()
         // val problem = TournamentWinner()
-        // problem.solve()
+        // val problem = ClassPhotos()
+        val problem = TandemBicycle()
+        problem.solve()
     }
 }
