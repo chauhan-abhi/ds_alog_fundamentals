@@ -1,4 +1,5 @@
 import arrays.*
+import linklist.RemoveDuplicates
 import trees.BranchSum
 import trees.ClosestValue
 import trees.NodeDepth
@@ -11,7 +12,13 @@ class Main {
             val main = Main()
             main.initArrayProblems()
             main.initTreeProblems()
+            main.initLinkListProblems()
         }
+    }
+
+    private fun initLinkListProblems() {
+        val problem = RemoveDuplicates()
+        problem.solve()
     }
 
     private fun initTreeProblems() {
@@ -28,6 +35,6 @@ class Main {
         // val problem = TournamentWinner()
         // val problem = ClassPhotos()
         val problem = TandemBicycle()
-        problem.solve()
+        //problem.solve()
     }
 }
