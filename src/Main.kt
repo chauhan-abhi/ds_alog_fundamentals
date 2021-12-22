@@ -1,9 +1,5 @@
 import arrays.*
 import linklist.RemoveDuplicates
-import trees.BranchSum
-import trees.ClosestValue
-import trees.NodeDepth
-import java.util.*
 
 class Main {
     companion object {
@@ -11,8 +7,8 @@ class Main {
         fun main(args: Array<String>) {
             val main = Main()
             main.initArrayProblems()
-            main.initTreeProblems()
-            main.initLinkListProblems()
+            //main.initTreeProblems()
+            //main.initLinkListProblems()
         }
     }
 
@@ -34,7 +30,8 @@ class Main {
         // val problem = TwoSun()
         // val problem = TournamentWinner()
         // val problem = ClassPhotos()
-        val problem = TandemBicycle()
-        //problem.solve()
+        //val problem = TandemBicycle()
+        val problem = NextPermutation()
+        problem.solve()
     }
 }
