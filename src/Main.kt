@@ -31,7 +31,8 @@ class Main {
         // val problem = TournamentWinner()
         // val problem = ClassPhotos()
         //val problem = TandemBicycle()
-        val problem = NextPermutation()
+        //val problem = NextPermutation()
+        val problem = NthFibonacci()
         problem.solve()
     }
 }
