@@ -32,7 +32,8 @@ class Main {
         // val problem = ClassPhotos()
         //val problem = TandemBicycle()
         //val problem = NextPermutation()
-        val problem = NthFibonacci()
+        //val problem = NthFibonacci()
+        val problem = MaximumSubArray()
         problem.solve()
     }
 }
