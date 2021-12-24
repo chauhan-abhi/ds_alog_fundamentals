@@ -27,13 +27,14 @@ class Main {
     fun initArrayProblems() {
         // val problem = SortedSquaresArray()
         // val problem = ValidSubsequence()
-        // val problem = TwoSun()
+        //val problem = TwoSum()
         // val problem = TournamentWinner()
         // val problem = ClassPhotos()
         //val problem = TandemBicycle()
         //val problem = NextPermutation()
         //val problem = NthFibonacci()
-        val problem = MaximumSubArray()
+        //val problem = MaximumSubArray()
+        val problem = MergeSortedArrays()
         problem.solve()
     }
 }
