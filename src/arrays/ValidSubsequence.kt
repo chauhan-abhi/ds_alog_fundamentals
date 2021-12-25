@@ -4,7 +4,7 @@ import Problem
 
 class ValidSubsequence: Problem {
 
-    fun isValidSubsequence(array: List<Int>, sequence: List<Int>): Boolean {
+    private fun isValidSubsequence(array: List<Int>, sequence: List<Int>): Boolean {
         val size = sequence.size
         var idx = 0
         for (element in array) {

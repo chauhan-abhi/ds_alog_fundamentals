@@ -34,7 +34,8 @@ class Main {
         //val problem = NextPermutation()
         //val problem = NthFibonacci()
         //val problem = MaximumSubArray()
-        val problem = MergeSortedArrays()
+        //val problem = MergeSortedArrays()
+        val problem = ArrayIntersectionII()
         problem.solve()
     }
 }

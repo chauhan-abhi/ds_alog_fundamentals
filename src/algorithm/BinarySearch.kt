@@ -1,8 +1,9 @@
 package algorithm
 
+import BaseProblem
 import Problem
 
-class BinarySearch: BaseAlgoProblem(), Problem {
+class BinarySearch: BaseProblem(), Problem {
     fun search(nums: IntArray, target: Int): Int {
         var start = 0
         var end = nums.size-1
