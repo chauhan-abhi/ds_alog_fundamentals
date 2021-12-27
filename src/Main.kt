@@ -35,7 +35,8 @@ class Main {
         //val problem = NthFibonacci()
         //val problem = MaximumSubArray()
         //val problem = MergeSortedArrays()
-        val problem = ArrayIntersectionII()
+        //val problem = ArrayIntersectionII()
+        val problem = BestTimeToSellStock()
         problem.solve()
     }
 }
