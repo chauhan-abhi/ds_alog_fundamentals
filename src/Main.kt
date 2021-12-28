@@ -37,7 +37,8 @@ class Main {
         //val problem = MergeSortedArrays()
         //val problem = ArrayIntersectionII()
         //val problem = BestTimeToSellStock()
-        val problem = MatrixReshape()
+        //val problem = MatrixReshape()
+        val problem = PascalsTriangle()
         problem.solve()
     }
 }
