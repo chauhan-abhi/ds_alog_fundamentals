@@ -1,15 +1,24 @@
 import arrays.*
 import linklist.RemoveDuplicates
+import strings.FirstUniqueCharacter
+import strings.RansomNote
 
 class Main {
     companion object {
         @JvmStatic
         fun main(args: Array<String>) {
             val main = Main()
-            main.initArrayProblems()
+            //main.initArrayProblems()
+            main.initStringProblems()
             //main.initTreeProblems()
             //main.initLinkListProblems()
         }
+    }
+
+    private fun initStringProblems() {
+        // val problem = FirstUniqueCharacter()
+        val problem = RansomNote()
+        problem.solve()
     }
 
     private fun initLinkListProblems() {
