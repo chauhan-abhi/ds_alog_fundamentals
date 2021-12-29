@@ -2,6 +2,7 @@ import arrays.*
 import linklist.RemoveDuplicates
 import strings.FirstUniqueCharacter
 import strings.RansomNote
+import strings.ValidAnagram
 
 class Main {
     companion object {
@@ -17,7 +18,8 @@ class Main {
 
     private fun initStringProblems() {
         // val problem = FirstUniqueCharacter()
-        val problem = RansomNote()
+        // val problem = RansomNote()
+        val problem = ValidAnagram()
         problem.solve()
     }
 
