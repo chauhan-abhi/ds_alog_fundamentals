@@ -1,4 +1,5 @@
 import arrays.*
+import linklist.*
 
 class Main {
     companion object {
@@ -8,7 +9,7 @@ class Main {
             // main.initArrayProblems()
             // main.initStringProblems()
             // main.initTreeProblems()
-            // main.initLinkListProblems()
+             main.initLinkListProblems()
         }
     }
 
@@ -20,9 +21,12 @@ class Main {
     }
 
     private fun initLinkListProblems() {
-        //val problem = RemoveDuplicates()
+        // val problem = RemoveDuplicates()
         // val problem = DetectCycle()
-        // problem.solve()
+        // val problem = MergeSortedList()
+        // val problem = RemoveElementsNode()
+        val problem = RotateList()
+        problem.solve()
     }
 
     private fun initTreeProblems() {
