@@ -1,31 +1,28 @@
 import arrays.*
-import linklist.RemoveDuplicates
-import strings.FirstUniqueCharacter
-import strings.RansomNote
-import strings.ValidAnagram
 
 class Main {
     companion object {
         @JvmStatic
         fun main(args: Array<String>) {
             val main = Main()
-            //main.initArrayProblems()
-            main.initStringProblems()
-            //main.initTreeProblems()
-            //main.initLinkListProblems()
+            // main.initArrayProblems()
+            // main.initStringProblems()
+            // main.initTreeProblems()
+            // main.initLinkListProblems()
         }
     }
 
     private fun initStringProblems() {
         // val problem = FirstUniqueCharacter()
         // val problem = RansomNote()
-        val problem = ValidAnagram()
-        problem.solve()
+        // val problem = ValidAnagram()
+        // problem.solve()
     }
 
     private fun initLinkListProblems() {
-        val problem = RemoveDuplicates()
-        problem.solve()
+        //val problem = RemoveDuplicates()
+        // val problem = DetectCycle()
+        // problem.solve()
     }
 
     private fun initTreeProblems() {
