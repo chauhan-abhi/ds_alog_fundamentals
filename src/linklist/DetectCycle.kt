@@ -2,6 +2,7 @@ package linklist
 
 import Problem
 
+// https://leetcode.com/problems/linked-list-cycle/
 class DetectCycle: Problem {
 
     private fun hasCycle(head: Node?): Boolean {

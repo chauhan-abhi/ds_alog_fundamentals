@@ -6,6 +6,7 @@ import Problem
 class RotateList: Problem {
 
     // 1 -> 4 -> 5 -> 8
+    // https://leetcode.com/problems/reverse-linked-list/
 
     private fun rotateList(head: Node?): Node? {
         val newHead: Node?

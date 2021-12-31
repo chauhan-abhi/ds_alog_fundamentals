@@ -9,6 +9,7 @@ import Problem
 * I am asked to write a function that is going to remove all the nodes with duplicate values
 * and return the modified linked list. The linked list should be modified in place
 * and the nodes should remain in their original order.
+* https://leetcode.com/problems/remove-duplicates-from-sorted-list/
 */
 
 class RemoveDuplicates: Problem {

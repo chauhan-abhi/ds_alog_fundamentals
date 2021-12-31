@@ -1,5 +1,6 @@
 import arrays.*
 import linklist.*
+import stack.ValidParenthesis
 
 class Main {
     companion object {
@@ -8,8 +9,9 @@ class Main {
             val main = Main()
             // main.initArrayProblems()
             // main.initStringProblems()
+             main.initStackProblems()
             // main.initTreeProblems()
-             main.initLinkListProblems()
+            // main.initLinkListProblems()
         }
     }
 
@@ -18,6 +20,11 @@ class Main {
         // val problem = RansomNote()
         // val problem = ValidAnagram()
         // problem.solve()
+    }
+
+    private fun initStackProblems() {
+        val problem =  ValidParenthesis()
+        problem.solve()
     }
 
     private fun initLinkListProblems() {
