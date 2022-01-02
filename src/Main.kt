@@ -1,5 +1,6 @@
 import arrays.*
 import linklist.*
+import stack.*
 import stack.ValidParenthesis
 
 class Main {
@@ -23,7 +24,8 @@ class Main {
     }
 
     private fun initStackProblems() {
-        val problem =  ValidParenthesis()
+        // val problem =  ValidParenthesis()
+        val problem =  QueueUsingStack()
         problem.solve()
     }
 
