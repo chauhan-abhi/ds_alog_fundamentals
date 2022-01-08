@@ -1,7 +1,8 @@
 import arrays.*
 import linklist.*
 import stack.*
-import stack.ValidParenthesis
+import trees.*
+import strings.*
 
 class Main {
     companion object {
@@ -9,8 +10,8 @@ class Main {
         fun main(args: Array<String>) {
             val main = Main()
             // main.initArrayProblems()
-            // main.initStringProblems()
-             main.initStackProblems()
+             main.initStringProblems()
+            // main.initStackProblems()
             // main.initTreeProblems()
             // main.initLinkListProblems()
         }
@@ -20,7 +21,8 @@ class Main {
         // val problem = FirstUniqueCharacter()
         // val problem = RansomNote()
         // val problem = ValidAnagram()
-        // problem.solve()
+         val problem = RomanToInteger()
+        problem.solve()
     }
 
     private fun initStackProblems() {
@@ -39,10 +41,12 @@ class Main {
     }
 
     private fun initTreeProblems() {
-        //val problem = ClosestValue()
-        //val problem = BranchSum()
-        //val problem = NodeDepth()
-        //problem.solve()
+        // val problem = ClosestValue()
+        // val problem = BranchSum()
+        // val problem = NodeDepth()
+        // val problem = PreOrderTraversal()
+        val problem = InOrderTraversal()
+        problem.solve()
     }
 
     fun initArrayProblems() {
