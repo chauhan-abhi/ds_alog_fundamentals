@@ -21,7 +21,9 @@ class Main {
         // val problem = FirstUniqueCharacter()
         // val problem = RansomNote()
         // val problem = ValidAnagram()
-         val problem = RomanToInteger()
+        // val problem = RomanToInteger()
+        // val problem = LongestCommonPrefix()
+        val problem = StrStr()
         problem.solve()
     }
 
