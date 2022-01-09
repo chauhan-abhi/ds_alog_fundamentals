@@ -1,4 +1,4 @@
-package strings
+package strings.easy
 
 import Problem
 
@@ -52,8 +52,8 @@ class RomanToInteger: Problem {
                 }
                 'X' -> {
                     val iv = if (i != charArray.size - 1) {
-                        if (charArray[i+1] == 'L') L-X
-                        else if (charArray[i+1] == 'C') C-X
+                        if (charArray[i+1] == 'L') L - X
+                        else if (charArray[i+1] == 'C') C - X
                         else X
                     } else X
                     if (iv > X) i++
@@ -61,8 +61,8 @@ class RomanToInteger: Problem {
                 }
                 'C' -> {
                     val iv = if (i != charArray.size - 1) {
-                        if (charArray[i+1] == 'D') D-C
-                        else if (charArray[i+1] == 'M') M-C
+                        if (charArray[i+1] == 'D') D - C
+                        else if (charArray[i+1] == 'M') M - C
                         else C
                     } else C
                     if (iv > C) i++
