@@ -23,7 +23,8 @@ class Main {
         // val problem = RomanToInteger()
         // val problem = LongestCommonPrefix()
         // val problem = StrStr()
-        val problem = LengthOfLastWord()
+        // val problem = LengthOfLastWord()
+        val problem = AddBinary()
         problem.solve()
     }
 
