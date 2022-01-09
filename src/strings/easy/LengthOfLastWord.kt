@@ -4,7 +4,7 @@ import Problem
 
 
 /*
-*
+* https://leetcode.com/problems/length-of-last-word/
 * */
 class LengthOfLastWord : Problem {
     private fun lengthOfLastWord(s: String): Int {
