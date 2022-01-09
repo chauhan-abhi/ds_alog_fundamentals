@@ -2,8 +2,7 @@ import arrays.*
 import linklist.*
 import stack.*
 import trees.*
-import strings.*
-
+import strings.easy.*
 class Main {
     companion object {
         @JvmStatic
@@ -23,7 +22,8 @@ class Main {
         // val problem = ValidAnagram()
         // val problem = RomanToInteger()
         // val problem = LongestCommonPrefix()
-        val problem = StrStr()
+        // val problem = StrStr()
+        val problem = LengthOfLastWord()
         problem.solve()
     }
 
