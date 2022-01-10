@@ -1,6 +1,7 @@
 package trees
 
 object TreeUtils {
+
     fun getTestTree() : BaseTreeProblem.TreeNode {
         val root = BaseTreeProblem.TreeNode(5)
         root.left = BaseTreeProblem.TreeNode(4)

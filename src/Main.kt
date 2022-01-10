@@ -9,9 +9,9 @@ class Main {
         fun main(args: Array<String>) {
             val main = Main()
             // main.initArrayProblems()
-             main.initStringProblems()
+            // main.initStringProblems()
             // main.initStackProblems()
-            // main.initTreeProblems()
+             main.initTreeProblems()
             // main.initLinkListProblems()
         }
     }
@@ -48,7 +48,8 @@ class Main {
         // val problem = BranchSum()
         // val problem = NodeDepth()
         // val problem = PreOrderTraversal()
-        val problem = InOrderTraversal()
+        // val problem = InOrderTraversal()
+        val problem = InvertTree()
         problem.solve()
     }
 
