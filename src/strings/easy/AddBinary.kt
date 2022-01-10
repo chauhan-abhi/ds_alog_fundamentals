@@ -26,9 +26,21 @@ class AddBinary : Problem {
         return res
     }
 
+    private fun convertToTitle(columnNumber: Int): String {
+        var n  = columnNumber
+        var res = ""
+        while (n != 0) {
+            res = ('A'.toInt() + (n-1)%26).toChar() + res
+            n = (n-1)/26
+        }
+        return res
+    }
+
     override fun solve() {
         println(addBinary("11", "1"))
         println(addBinary("1010", "1011"))
-
+        println(convertToTitle(701))
+        println(convertToTitle(1))
+        println(convertToTitle(28))
     }
 }
