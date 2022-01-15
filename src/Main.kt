@@ -49,7 +49,8 @@ class Main {
         // val problem = NodeDepth()
         // val problem = PreOrderTraversal()
         // val problem = InOrderTraversal()
-        val problem = InvertTree()
+        val problem = PostOrderTraversal()
+        //val problem = InvertTree()
         problem.solve()
     }
 
