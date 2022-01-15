@@ -52,7 +52,8 @@ class Main {
         // val problem = PostOrderTraversal()
         //val problem = InvertTree()
         //val problem = LevelOrderTraversal()
-        val problem = MaxDepth()
+        // val problem = MaxDepth()
+        val problem = SymmetricTree()
         problem.solve()
     }
 
