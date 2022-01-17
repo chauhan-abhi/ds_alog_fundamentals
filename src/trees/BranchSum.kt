@@ -1,7 +1,6 @@
 package trees
 
 import Problem
-import java.util.ArrayList
 
 
 /*
@@ -21,7 +20,17 @@ class BranchSum : BaseTreeProblem(), Problem {
     override fun solve() {
         val result = arrayListOf<Int>()
         branchSum(getTree(), 0, result)
+        println(hasPathSum(getTree(), 22))
+        println(hasPathSum(getTree(), 23))
         print(result)
+    }
+
+    private fun hasPathSum(root: TreeNode?, target: Int): Boolean {
+        if (root == null) return false
+        return if (root.left == null &&
+            root.right == null &&
+            root.value == target) true
+        else hasPathSum(root.left, target - root.value) || hasPathSum(root.right, target - root.value)
     }
 
     private fun branchSum(root: TreeNode?, value: Int, result: ArrayList<Int>) {

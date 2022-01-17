@@ -45,7 +45,7 @@ class Main {
 
     private fun initTreeProblems() {
         // val problem = ClosestValue()
-        // val problem = BranchSum()
+         val problem = BranchSum()
         // val problem = NodeDepth()
         // val problem = PreOrderTraversal()
         // val problem = InOrderTraversal()
@@ -53,7 +53,7 @@ class Main {
         //val problem = InvertTree()
         //val problem = LevelOrderTraversal()
         // val problem = MaxDepth()
-        val problem = SymmetricTree()
+        //val problem = SymmetricTree()
         problem.solve()
     }
 
