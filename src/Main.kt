@@ -8,10 +8,10 @@ class Main {
         @JvmStatic
         fun main(args: Array<String>) {
             val main = Main()
-            // main.initArrayProblems()
+             main.initArrayProblems()
             // main.initStringProblems()
             // main.initStackProblems()
-             main.initTreeProblems()
+            // main.initTreeProblems()
             // main.initLinkListProblems()
         }
     }
@@ -69,11 +69,11 @@ class Main {
         // val problem = MaximumSubArray()
         // val problem = MergeSortedArrays()
         // val problem = ArrayIntersectionII()
-        // val problem = BestTimeToSellStock()
+         val problem = BestTimeToSellStock()
         // val problem = MatrixReshape()
         // val problem = PascalsTriangle()
         // val problem = ValidSudoku()
-        val problem = MatrixSearch()
+        //val problem = MatrixSearch()
         problem.solve()
     }
 }
