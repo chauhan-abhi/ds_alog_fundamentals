@@ -69,11 +69,13 @@ class Main {
         // val problem = MaximumSubArray()
         // val problem = MergeSortedArrays()
         // val problem = ArrayIntersectionII()
-         val problem = BestTimeToSellStock()
+        // val problem = BestTimeToSellStock()
         // val problem = MatrixReshape()
         // val problem = PascalsTriangle()
         // val problem = ValidSudoku()
-        //val problem = MatrixSearch()
+        // val problem = MatrixSearch()
+        // val problem = SingleNumber()
+        val problem = MajorityNumber()
         problem.solve()
     }
 }
