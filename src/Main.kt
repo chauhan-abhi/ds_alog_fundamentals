@@ -1,4 +1,5 @@
 import arrays.*
+import arrays.sorting.*
 import linklist.*
 import stack.*
 import trees.*
@@ -77,7 +78,8 @@ class Main {
         // val problem = MatrixSearch()
         // val problem = SingleNumber()
         //val problem = MajorityNumber()
-        val problem = SortColors()
+        //val problem = SortColors()
+        val problem = MergeIntervals()
         problem.solve()
     }
 }
