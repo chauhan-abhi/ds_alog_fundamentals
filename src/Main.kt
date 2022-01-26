@@ -61,6 +61,7 @@ class Main {
         // val problem = SortedSquaresArray()
         // val problem = ValidSubsequence()
         // val problem = TwoSum()
+         val problem = ThreeSum()
         // val problem = TournamentWinner()
         // val problem = ClassPhotos()
         // val problem = TandemBicycle()
@@ -75,7 +76,7 @@ class Main {
         // val problem = ValidSudoku()
         // val problem = MatrixSearch()
         // val problem = SingleNumber()
-        val problem = MajorityNumber()
+        //val problem = MajorityNumber()
         problem.solve()
     }
 }
