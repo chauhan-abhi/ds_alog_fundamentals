@@ -1,4 +1,4 @@
-package arrays
+package arrays.matrix
 
 import BaseProblem
 import Problem

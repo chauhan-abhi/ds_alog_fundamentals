@@ -11,7 +11,7 @@ class ThreeSum: Problem {
         nums.sort()
         var i = 0
 
-        while (i < nums.size-2){
+        while (i < nums.size-2) {
             // if positive number is encountered in sorted array no possible soln ahead
             if (nums[i] > 0) break
 
