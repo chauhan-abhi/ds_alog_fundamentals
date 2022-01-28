@@ -1,4 +1,4 @@
-package arrays
+package arrays.matrix
 
 import BaseProblem
 import Problem
@@ -34,7 +34,7 @@ class PascalsTriangle: BaseProblem(), Problem {
     }
 
     override fun solve() {
-        val res = generate(5)
+        val res = generate(3)
         for(element in res) {
             for (j in element) {
                 print(j)

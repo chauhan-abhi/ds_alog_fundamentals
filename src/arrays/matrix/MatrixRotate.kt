@@ -1,10 +1,10 @@
-package arrays
+package arrays.matrix
 
 import BaseProblem
 import Problem
 
 
-class MatrixReshape: BaseProblem(), Problem {
+class MatrixRotate: BaseProblem(), Problem {
 
     private fun matrixReshape(mat: Array<IntArray>, r: Int, c: Int): Array<IntArray> {
         val m = mat.size
