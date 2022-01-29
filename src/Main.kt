@@ -1,4 +1,5 @@
 import arrays.matrix.*
+import arrays.sorting.*
 import linklist.*
 import stack.*
 import trees.*
@@ -8,8 +9,8 @@ class Main {
         @JvmStatic
         fun main(args: Array<String>) {
             val main = Main()
-            //main.initArrayProblems()
-            main.initMatrixProblems()
+            main.initArrayProblems()
+            //main.initMatrixProblems()
             // main.initStringProblems()
             // main.initStackProblems()
             // main.initTreeProblems()
@@ -81,13 +82,14 @@ class Main {
         // val problem = ArrayIntersectionII()
         // val problem = BestTimeToSellStock()
         // val problem = MatrixReshape()
-         val problem = PascalsTriangle()
+        // val problem = PascalsTriangle()
         // val problem = ValidSudoku()
         // val problem = MatrixSearch()
         // val problem = SingleNumber()
         //val problem = MajorityNumber()
         //val problem = SortColors()
         //val problem = MergeIntervals()
+        val problem = NonOverlappingIntervals()
         problem.solve()
     }
 }
