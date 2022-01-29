@@ -18,7 +18,8 @@ class Main {
     }
 
     private fun initMatrixProblems() {
-        val problem = MatrixReshape()
+        val problem = SpiralMatrix()
+        //val problem = MatrixReshape()
         problem.solve()
     }
 
