@@ -1,5 +1,6 @@
 import arrays.matrix.*
 import arrays.sorting.*
+import arrays.medium.*
 import arrays.*
 import linklist.*
 import stack.*
@@ -10,9 +11,9 @@ class Main {
         @JvmStatic
         fun main(args: Array<String>) {
             val main = Main()
-            //main.initArrayProblems()
+            main.initArrayProblems()
             //main.initMatrixProblems()
-             main.initStringProblems()
+            // main.initStringProblems()
             // main.initStackProblems()
             // main.initTreeProblems()
             // main.initLinkListProblems()
@@ -36,7 +37,8 @@ class Main {
         // val problem = StrStr()
         // val problem = LengthOfLastWord()
         //val problem = AddBinary()
-        val problem = AddStrings()
+        //val problem = AddStrings()
+        val problem = LongestPalindrome()
         problem.solve()
     }
 
@@ -92,7 +94,9 @@ class Main {
         //val problem = SortColors()
         //val problem = MergeIntervals()
        // val problem = NonOverlappingIntervals()
-        val problem = IncreasingTriplet()
+        //val problem = IncreasingTriplet()
+        //val problem = ProductExceptSelf()
+        val problem = SubArraySumK()
         problem.solve()
     }
 }
