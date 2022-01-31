@@ -11,9 +11,9 @@ class Main {
         @JvmStatic
         fun main(args: Array<String>) {
             val main = Main()
-            main.initArrayProblems()
+            //main.initArrayProblems()
             //main.initMatrixProblems()
-            // main.initStringProblems()
+             main.initStringProblems()
             // main.initStackProblems()
             // main.initTreeProblems()
             // main.initLinkListProblems()
@@ -38,7 +38,10 @@ class Main {
         // val problem = LengthOfLastWord()
         //val problem = AddBinary()
         //val problem = AddStrings()
-        val problem = LongestPalindrome()
+        //val problem = LongestPalindrome()
+        //val problem = WordPattern()
+        val problem = WordPartition()
+
         problem.solve()
     }
 
