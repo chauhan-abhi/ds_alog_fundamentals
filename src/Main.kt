@@ -42,7 +42,8 @@ class Main {
         //val problem = LongestPalindrome()
         //val problem = WordPattern()
         //val problem = WordPartition()
-        val problem = GroupAnagrams()
+        //val problem = GroupAnagrams()
+        val problem = MultiplyStrings()
 
         problem.solve()
     }
