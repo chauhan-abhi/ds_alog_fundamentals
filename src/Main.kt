@@ -6,6 +6,7 @@ import linklist.*
 import stack.*
 import trees.*
 import strings.easy.*
+import strings.medium.*
 class Main {
     companion object {
         @JvmStatic
@@ -40,7 +41,8 @@ class Main {
         //val problem = AddStrings()
         //val problem = LongestPalindrome()
         //val problem = WordPattern()
-        val problem = WordPartition()
+        //val problem = WordPartition()
+        val problem = GroupAnagrams()
 
         problem.solve()
     }
