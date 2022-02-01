@@ -13,7 +13,7 @@ class AddStrings : Problem {
         var j = b.length -1
         var carry = 0
         var res = ""
-        while (i >= 0 ||  j >=0 || carry >= 1) {
+        while (i >= 0 ||  j >=0 || carry > 0) {
             carry += if (i >= 0) a[i]-'0' else 0
             carry += if (j >= 0) b[j]-'0' else 0
 
