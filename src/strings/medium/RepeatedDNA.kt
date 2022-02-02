@@ -4,7 +4,7 @@ import Problem
 import java.lang.StringBuilder
 
 /*
-* https://leetcode.com/problems/multiply-strings/
+* https://leetcode.com/problems/repeated-dna-sequences
 *  */
 class RepeatedDNA : Problem {
 
@@ -12,7 +12,7 @@ class RepeatedDNA : Problem {
 
         val set = hashSetOf<String>()
         val setRepeat = hashSetOf<String>()
-        for (i in 0 until s.length-10) {
+        for (i in 0 until s.length-9) {
             val x = s.substring(i..(i+9))
             if (!set.add(x) ) setRepeat.add(x)
         }
@@ -21,8 +21,8 @@ class RepeatedDNA : Problem {
 
 
     override fun solve() {
-        println(findRepeatedDnaSequences("AAAAACCCCCAAAAACCCCCCAAAAAGGGTTT"))
-        println(findRepeatedDnaSequences("AAAAAAAAAAAAA"))
+       // println(findRepeatedDnaSequences("AAAAACCCCCAAAAACCCCCCAAAAAGGGTTT"))
+        println(findRepeatedDnaSequences("AAAAAAAAAAA"))
 
     }
 }
