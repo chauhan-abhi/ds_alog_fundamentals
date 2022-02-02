@@ -44,7 +44,8 @@ class Main {
         //val problem = WordPartition()
         //val problem = GroupAnagrams()
         //val problem = MultiplyStrings()
-        val problem = RepeatedDNA()
+        //val problem = RepeatedDNA()
+        val problem = LongestPalindromicSubstring()
 
         problem.solve()
     }
