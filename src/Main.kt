@@ -43,7 +43,8 @@ class Main {
         //val problem = WordPattern()
         //val problem = WordPartition()
         //val problem = GroupAnagrams()
-        val problem = MultiplyStrings()
+        //val problem = MultiplyStrings()
+        val problem = RepeatedDNA()
 
         problem.solve()
     }
