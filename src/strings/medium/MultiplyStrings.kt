@@ -4,7 +4,6 @@ import Problem
 import java.lang.StringBuilder
 
 /*
-
 * https://leetcode.com/problems/multiply-strings/
 *  */
 class MultiplyStrings : Problem {
@@ -25,7 +24,7 @@ class MultiplyStrings : Problem {
                 prod += res[i+j+1]
 
                 res[i+j+1] = prod%10
-                res[i+j] = prod/10
+                res[i+j] += prod/10
             }
         }
 
