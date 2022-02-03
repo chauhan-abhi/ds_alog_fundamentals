@@ -14,10 +14,10 @@ class Main {
             val main = Main()
             //main.initArrayProblems()
             //main.initMatrixProblems()
-             main.initStringProblems()
+            // main.initStringProblems()
             // main.initStackProblems()
             // main.initTreeProblems()
-            // main.initLinkListProblems()
+             main.initLinkListProblems()
         }
     }
 
@@ -59,9 +59,11 @@ class Main {
     private fun initLinkListProblems() {
         // val problem = RemoveDuplicates()
         // val problem = DetectCycle()
+         val problem = DetectCycleII()
         // val problem = MergeSortedList()
         // val problem = RemoveElementsNode()
-        val problem = RotateList()
+        //val problem = RotateList()
+        //val problem = AddNumber()
         problem.solve()
     }
 
