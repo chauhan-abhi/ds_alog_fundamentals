@@ -11,7 +11,6 @@ class SwapNodes: Problem {
     private fun swapPairs(head: Node?): Node? {
         val dummy = Node(-1)
         dummy.next = head
-        var prev: Node? = dummy
         var curr : Node?= dummy
 
         while (curr?.next != null && curr.next?.next != null) {
