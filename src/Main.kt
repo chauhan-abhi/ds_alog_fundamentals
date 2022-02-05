@@ -57,14 +57,14 @@ class Main {
     }
 
     private fun initLinkListProblems() {
-        // val problem = RemoveDuplicates()
+         val problem = RemoveDuplicates()
         // val problem = DetectCycle()
         // val problem = DetectCycleII()
         // val problem = MergeSortedList()
         // val problem = RemoveElementsNode()
         //val problem = RotateList()
         //val problem = AddNumber()
-        val problem = IntersectionNode()
+        //val problem = IntersectionNode()
         problem.solve()
     }
 
