@@ -22,9 +22,15 @@ class RemoveDuplicates: Problem {
         root.next?.next?.next?.next= Node(4)
         root.next?.next?.next?.next?.next= Node(4)
         var modifiedRoot = removeDuplicates(root)
+        var modifiedRoot1 = removeDuplicatesII(root)
         while (modifiedRoot != null) {
             print("${modifiedRoot.value} ")
             modifiedRoot = modifiedRoot.next
+        }
+        println()
+        while (modifiedRoot1 != null) {
+            print("${modifiedRoot1.value} ")
+            modifiedRoot1 = modifiedRoot1.next
         }
     }
 
@@ -40,4 +46,25 @@ class RemoveDuplicates: Problem {
         }
         return root
     }
+    private fun removeDuplicatesII(root: Node?): Node? {
+        if (root == null) return null
+        val dummyHead = Node(-1)
+        dummyHead.next = root
+        var pre: Node? = dummyHead
+        var current  = root
+
+        while (current != null) {
+            while (current?.next != null && current.value == current.next?.value) {
+                current = current.next
+            }
+            if (pre?.next == current) {
+                pre = pre?.next
+            } else {
+                pre?.next = current?.next
+            }
+            current = current?.next
+        }
+        return dummyHead.next
+    }
+
 }
