@@ -66,7 +66,8 @@ class Main {
         //val problem = AddNumber()
         //val problem = IntersectionNode()
         //val problem = SwapNodes()
-        val problem = ReorderList()
+        //val problem = ReorderList()
+        val problem = ReverseNodeInKGroup()
         problem.solve()
     }
 
