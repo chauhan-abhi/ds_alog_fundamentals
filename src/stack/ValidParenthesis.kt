@@ -1,7 +1,10 @@
 package stack
 
 import Problem
+import java.lang.StringBuilder
+import java.util.*
 import kotlin.collections.ArrayDeque
+import kotlin.collections.HashSet
 
 class ValidParenthesis: Problem {
 
@@ -32,8 +35,30 @@ class ValidParenthesis: Problem {
         return true
     }
 
+    private fun minRemoveToMakeValid(s: String): String {
+        val stack = Stack<Int>()
+        val set = HashSet<Int>()
+
+        for (i in s.toCharArray().indices) {
+            if (s[i] == '(') stack.push(i)
+            else if (s[i] == ')') {
+                if (stack.isEmpty()) set.add(i)
+                else stack.pop()
+            }
+        }
+        set.addAll(stack)
+        val sb = StringBuilder()
+        for (i in s.toCharArray().indices) {
+            if (!set.contains(i)) sb.append(s[i])
+        }
+        return sb.toString()
+    }
+
     override fun solve() {
-        println(isValid("()[]{}"))
-        println(isValid("(]"))
+        //println(isValid("()[]{}"))
+        //println(isValid("(]"))
+        println(minRemoveToMakeValid("a)b(c)d"))
+        println(minRemoveToMakeValid("))(("))
+        println(minRemoveToMakeValid("lee(t(c)o)de)"))
     }
 }
