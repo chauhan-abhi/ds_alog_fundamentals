@@ -15,9 +15,9 @@ class Main {
             //main.initArrayProblems()
             //main.initMatrixProblems()
             // main.initStringProblems()
-            // main.initStackProblems()
+             main.initStackProblems()
             // main.initTreeProblems()
-             main.initLinkListProblems()
+           //  main.initLinkListProblems()
         }
     }
 
@@ -51,8 +51,8 @@ class Main {
     }
 
     private fun initStackProblems() {
-        // val problem =  ValidParenthesis()
-        val problem =  QueueUsingStack()
+         val problem =  ValidParenthesis()
+        //val problem =  QueueUsingStack()
         problem.solve()
     }
 
