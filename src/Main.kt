@@ -65,7 +65,8 @@ class Main {
         //val problem = RotateList()
         //val problem = AddNumber()
         //val problem = IntersectionNode()
-        val problem = SwapNodes()
+        //val problem = SwapNodes()
+        val problem = ReorderList()
         problem.solve()
     }
 

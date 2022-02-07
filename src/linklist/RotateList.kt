@@ -36,4 +36,11 @@ class RotateList: Problem {
             modifiedRoot = modifiedRoot.next
         }
     }
+
+    companion object {
+        fun rotate(head: Node?): Node? {
+            val x = RotateList()
+            return x.rotateList(head)
+        }
+    }
 }
