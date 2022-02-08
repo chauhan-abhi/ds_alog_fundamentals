@@ -24,8 +24,8 @@ class FindWinner : Problem {
 
     override fun solve() {
 
-        print(findTheWinner(5, 2))
-        print(findTheWinner(6, 5))
+        println(findTheWinner(5, 2))
+        println(findTheWinner(6, 5))
 
     }
 
