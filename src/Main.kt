@@ -15,9 +15,9 @@ class Main {
             //main.initArrayProblems()
             //main.initMatrixProblems()
             // main.initStringProblems()
-             main.initStackProblems()
+            // main.initStackProblems()
             // main.initTreeProblems()
-           //  main.initLinkListProblems()
+             main.initLinkListProblems()
         }
     }
 
@@ -67,7 +67,8 @@ class Main {
         //val problem = IntersectionNode()
         //val problem = SwapNodes()
         //val problem = ReorderList()
-        val problem = ReverseNodeInKGroup()
+        //val problem = ReverseNodeInKGroup()
+        val problem = FindWinner()
         problem.solve()
     }
 

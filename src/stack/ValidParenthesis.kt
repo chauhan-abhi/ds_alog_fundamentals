@@ -56,8 +56,8 @@ class ValidParenthesis: Problem {
     }
 
     override fun solve() {
-        //println(isValid("()[]{}"))
-        //println(isValid("(]"))
+        println(isValid("()[]{}"))
+        println(isValid("(]"))
         println(minRemoveToMakeValid("a)b(c)d"))
         println(minRemoveToMakeValid("))(("))
         println(minRemoveToMakeValid("lee(t(c)o)de)"))
