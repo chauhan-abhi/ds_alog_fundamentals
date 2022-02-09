@@ -16,8 +16,8 @@ class Main {
             //main.initMatrixProblems()
             // main.initStringProblems()
             // main.initStackProblems()
-            // main.initTreeProblems()
-             main.initLinkListProblems()
+             main.initTreeProblems()
+            // main.initLinkListProblems()
         }
     }
 
@@ -74,7 +74,7 @@ class Main {
 
     private fun initTreeProblems() {
         // val problem = ClosestValue()
-         val problem = BranchSum()
+        // val problem = BranchSum()
         // val problem = NodeDepth()
         // val problem = PreOrderTraversal()
         // val problem = InOrderTraversal()
@@ -83,6 +83,8 @@ class Main {
         //val problem = LevelOrderTraversal()
         // val problem = MaxDepth()
         //val problem = SymmetricTree()
+        //val problem = ZigZagTraversal()
+        val problem = ConstructTree()
         problem.solve()
     }
 
