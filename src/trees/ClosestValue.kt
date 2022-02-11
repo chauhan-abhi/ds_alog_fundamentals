@@ -19,7 +19,7 @@ class ClosestValue : BaseTreeProblem(), Problem {
     override fun solve() {
         val root = getTree()
         val target = 5.0
-        closest = root.value
+        closest = root.`val`
         computeClosestElementInBST(root, target)
         print(closest)
     }
@@ -28,9 +28,9 @@ class ClosestValue : BaseTreeProblem(), Problem {
 
     private fun computeClosestElementInBST(root: TreeNode?, target: Double) {
         if (root == null) return
-        if (abs(root.value - target) < abs(target - closest))
-            closest = root.value
-        if (target > root.value)
+        if (abs(root.`val` - target) < abs(target - closest))
+            closest = root.`val`
+        if (target > root.`val`)
             computeClosestElementInBST(root.right, target)
         else computeClosestElementInBST(root.left, target)
     }

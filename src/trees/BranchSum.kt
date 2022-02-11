@@ -29,18 +29,18 @@ class BranchSum : BaseTreeProblem(), Problem {
         if (root == null) return false
         return if (root.left == null &&
             root.right == null &&
-            root.value == target) true
-        else hasPathSum(root.left, target - root.value) || hasPathSum(root.right, target - root.value)
+            root.`val` == target) true
+        else hasPathSum(root.left, target - root.`val`) || hasPathSum(root.right, target - root.`val`)
     }
 
     private fun branchSum(root: TreeNode?, value: Int, result: ArrayList<Int>) {
         if (root == null) return
         if (root.left == null && root.right == null) {
-            result.add(root.value + value)
+            result.add(root.`val` + value)
             return
         } else {
-            branchSum(root.left, root.value + value, result)
-            branchSum(root.right, root.value + value, result)
+            branchSum(root.left, root.`val` + value, result)
+            branchSum(root.right, root.`val` + value, result)
         }
     }
 

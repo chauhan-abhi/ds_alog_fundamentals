@@ -26,8 +26,8 @@ class ZigZagTraversal : BaseTreeProblem(), Problem {
             val tmp = arrayListOf<Int>()
             for (i in 0 until size) {
                 val node = queue.poll()
-                if (ltr) tmp.add(node.value)
-                else tmp.add(0, node.value)
+                if (ltr) tmp.add(node.`val`)
+                else tmp.add(0, node.`val`)
                 if(node.left != null) queue.add(node.left!!)
                 if(node.right != null) queue.add(node.right!!)
 

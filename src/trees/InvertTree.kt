@@ -33,7 +33,7 @@ class InvertTree: BaseTreeProblem(), Problem {
     private fun inHelper(list: LinkedList<Int>, root: TreeNode?) {
         if (root == null) return
         inHelper(list, root.left)
-        list.add(root.value)
+        list.add(root.`val`)
         inHelper(list, root.right)
     }
 
