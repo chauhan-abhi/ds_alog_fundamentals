@@ -36,7 +36,7 @@ class ConstructTree : BaseTreeProblem(), Problem {
         val root = TreeNode(preorder[preStart++])
 
         if (inStart == inEnd) return root
-        val inIndex = (hm[root.value]?: 0)
+        val inIndex = (hm[root.`val`]?: 0)
         root.left = buildTreeUtil(preorder, inorder, inStart, inIndex -1,  hm)
         root.right = buildTreeUtil(preorder, inorder, inIndex + 1,inEnd,  hm)
         return root

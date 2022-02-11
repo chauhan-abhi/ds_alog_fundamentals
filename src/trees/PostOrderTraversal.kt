@@ -23,10 +23,10 @@ class PostOrderTraversal: BaseTreeProblem(), Problem {
                 visitingStack.push(cur)
                 cur = cur?.left
             }
-            if (cur != null) postOrder.add(cur.value)
+            if (cur != null) postOrder.add(cur.`val`)
             while (!visitingStack.empty() && cur == visitingStack.peek().right) {
                 cur = visitingStack.pop()
-                postOrder.add(cur.value)
+                postOrder.add(cur.`val`)
             }
             cur = if (visitingStack.empty()) null else visitingStack.peek().right
         }
@@ -42,7 +42,7 @@ class PostOrderTraversal: BaseTreeProblem(), Problem {
         if (root == null) return
         postHelper(list, root.left)
         postHelper(list, root.right)
-        list.add(root.value)
+        list.add(root.`val`)
 
     }
 

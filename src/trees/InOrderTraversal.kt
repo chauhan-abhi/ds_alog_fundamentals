@@ -22,7 +22,7 @@ class InOrderTraversal: BaseTreeProblem(), Problem {
                 current = current.left
             }
             current = visitingStack.pop()
-            inorder.add(current.value)
+            inorder.add(current.`val`)
             current = current.right
         }
         return inorder
@@ -31,7 +31,7 @@ class InOrderTraversal: BaseTreeProblem(), Problem {
     private fun inHelper(list: LinkedList<Int>, root: TreeNode?) {
         if (root == null) return
         inHelper(list, root.left)
-        list.add(root.value)
+        list.add(root.`val`)
         inHelper(list, root.right)
     }
 

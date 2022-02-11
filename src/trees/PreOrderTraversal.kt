@@ -19,7 +19,7 @@ class PreOrderTraversal: BaseTreeProblem(), Problem {
         visitingStack.push(root)
         while (!visitingStack.empty()) {
             val visiting = visitingStack.pop()
-            pre.add(visiting.value)
+            pre.add(visiting.`val`)
             if (visiting.right != null) visitingStack.push(visiting.right)
             if (visiting.left != null) visitingStack.push(visiting.left)
         }
@@ -29,7 +29,7 @@ class PreOrderTraversal: BaseTreeProblem(), Problem {
     private fun preHelper(list: LinkedList<Int>, root: TreeNode?) {
         if (root == null) return
 
-        list.add(root.value)
+        list.add(root.`val`)
         preHelper(list, root.left)
         preHelper(list, root.right)
     }

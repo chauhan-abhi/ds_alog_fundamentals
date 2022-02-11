@@ -21,7 +21,7 @@ class SymmetricTree: BaseTreeProblem(), Problem {
 
     private fun isSymmetricHelper(left: TreeNode?, right: TreeNode?): Boolean {
         if (left == null || right == null) return left == right
-        else if (left.value != right.value) return false
+        else if (left.`val` != right.`val`) return false
         else return isSymmetricHelper(left.left, right.right) && isSymmetricHelper(left.right, right.left)
     }
 
@@ -35,7 +35,7 @@ class SymmetricTree: BaseTreeProblem(), Problem {
             val left = q.poll()
             val right = q.poll()
             if (left == null && right == null) continue
-            if (left == null || right == null || left.value != right.value) return false
+            if (left == null || right == null || left.`val` != right.`val`) return false
             q.add(left.left)
             q.add(right.right)
             q.add(left.right)
@@ -55,7 +55,7 @@ class SymmetricTree: BaseTreeProblem(), Problem {
     private fun inHelper(list: LinkedList<Int>, root: TreeNode?) {
         if (root == null) return
         inHelper(list, root.left)
-        list.add(root.value)
+        list.add(root.`val`)
         inHelper(list, root.right)
     }
 

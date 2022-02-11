@@ -23,7 +23,7 @@ class LevelOrderTraversal: BaseTreeProblem(), Problem {
                     queue.add(queue.peek().left!!)
                 if (queue.peek().right != null)
                     queue.add(queue.peek().right!!)
-                levelList.add(queue.poll().value)
+                levelList.add(queue.poll().`val`)
 
             }
             levelOrder.add(levelList)

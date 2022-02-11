@@ -25,13 +25,13 @@ class PathSumII : BaseTreeProblem(), Problem {
 
     private fun pathSum(root: TreeNode?, value: Int, path: ArrayList<Int>, result: ArrayList<List<Int>>) {
         if (root == null) return
-        path.add(root.value)
-        if (root.value == value && root.left == null && root.right == null) {
+        path.add(root.`val`)
+        if (root.`val` == value && root.left == null && root.right == null) {
             result.add(path)
             return
         }
-        pathSum(root.left, value - root.value, ArrayList(path), result)
-        pathSum(root.right, value - root.value, ArrayList(path), result)
+        pathSum(root.left, value - root.`val`, ArrayList(path), result)
+        pathSum(root.right, value - root.`val`, ArrayList(path), result)
 
     }
 

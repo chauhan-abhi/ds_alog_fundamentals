@@ -82,7 +82,9 @@ class Main {
         //val problem = SymmetricTree()
         //val problem = ZigZagTraversal()
         //val problem = ConstructTree()
-        val problem = PathSumII()
+        //val problem = PathSumII()
+        //val problem = RightViewTree()
+        val problem = KthSmallestNode()
         problem.solve()
     }
 
