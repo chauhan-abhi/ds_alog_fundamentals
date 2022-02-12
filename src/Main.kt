@@ -1,5 +1,6 @@
 import arrays.matrix.*
 import arrays.medium.*
+import graph.*
 import linklist.*
 import stack.*
 import trees.*
@@ -13,8 +14,9 @@ class Main {
             //main.initMatrixProblems()
             // main.initStringProblems()
             // main.initStackProblems()
-             main.initTreeProblems()
+            // main.initTreeProblems()
             // main.initLinkListProblems()
+            main.initGraphProblems()
         }
     }
 
@@ -84,7 +86,8 @@ class Main {
         //val problem = ConstructTree()
         //val problem = PathSumII()
         //val problem = RightViewTree()
-        val problem = KthSmallestNode()
+        //val problem = KthSmallestNode()
+        val problem = LowestCommonAncestor()
         problem.solve()
     }
 
@@ -114,6 +117,11 @@ class Main {
         //val problem = IncreasingTriplet()
         //val problem = ProductExceptSelf()
         val problem = SubArraySumK()
+        problem.solve()
+    }
+
+    fun initGraphProblems() {
+        val problem = KeysAndRoom()
         problem.solve()
     }
 }
