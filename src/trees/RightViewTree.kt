@@ -17,7 +17,7 @@ class RightViewTree : BaseTreeProblem(), Problem {
     private fun rightSideView(root: TreeNode?): List<Int> {
         val list = arrayListOf<Int>()
         if (root == null) return list
-        val queue: Queue<TreeNode> = LinkedList<TreeNode>()
+        val queue: Queue<TreeNode> = LinkedList()
         queue.add(root)
 
         while (queue.isNotEmpty()) {
