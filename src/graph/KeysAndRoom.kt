@@ -4,6 +4,7 @@ import Problem
 import java.util.*
 import kotlin.collections.HashSet
 
+//https://leetcode.com/problems/keys-and-rooms/
 class KeysAndRoom: Problem {
     override fun solve() {
         val listFalse = arrayListOf(listOf(1,3), listOf(3,0,1), listOf(1), listOf(0))
