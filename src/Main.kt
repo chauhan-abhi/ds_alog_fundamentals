@@ -17,8 +17,15 @@ class Main {
             // main.initStackProblems()
             // main.initTreeProblems()
             // main.initLinkListProblems()
-            main.initGraphProblems()
+            //main.initGraphProblems()
+            main.initHeapProblems()
         }
+    }
+
+    private fun initHeapProblems() {
+        //val problem = KthFrequentElement()
+        val problem = SortCharactersByFreq()
+        problem.solve()
     }
 
     private fun initMatrixProblems() {
@@ -122,8 +129,7 @@ class Main {
     }
 
     fun initGraphProblems() {
-        //val problem = KeysAndRoom()
-        val problem = KthFrequentElement()
+        val problem = KeysAndRoom()
         problem.solve()
     }
 }
