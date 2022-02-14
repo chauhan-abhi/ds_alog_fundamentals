@@ -24,7 +24,8 @@ class Main {
 
     private fun initHeapProblems() {
         //val problem = KthFrequentElement()
-        val problem = SortCharactersByFreq()
+        //val problem = SortCharactersByFreq()
+        val problem = KClosestPoint()
         problem.solve()
     }
 
