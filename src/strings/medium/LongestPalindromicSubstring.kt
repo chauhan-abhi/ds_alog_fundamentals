@@ -26,6 +26,20 @@ class LongestPalindromicSubstring : Problem {
 
     }
 
+    fun longestSubsequenceWithoutRepetition(s: String): Int {
+        val map = HashMap<Char, Int>()
+        var start = 0
+        var maxL = 0
+        for (end in s.indices) {
+            if (map.containsKey(s[end])) {
+                start = Math.max(start, map[s[end]]!! + 1)
+            }
+            map[s[end]] = end
+            maxL = Math.max(maxL, end-start+1)
+        }
+        return maxL
+    }
+
     private fun expand(s: String, left: Int, right: Int): Int {
         var start = left
         var end = right
