@@ -126,7 +126,8 @@ class Main {
         //val problem = IncreasingTriplet()
         //val problem = ProductExceptSelf()
         //val problem = SubArraySumK()
-        val problem = SearchInRotatedArray()
+        //val problem = SearchInRotatedArray()
+        val problem = RangeSearchArray()
         problem.solve()
     }
 
