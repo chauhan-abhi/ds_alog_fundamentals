@@ -11,14 +11,14 @@ class Main {
         @JvmStatic
         fun main(args: Array<String>) {
             val main = Main()
-            //main.initArrayProblems()
+            main.initArrayProblems()
             //main.initMatrixProblems()
             // main.initStringProblems()
             // main.initStackProblems()
             // main.initTreeProblems()
             // main.initLinkListProblems()
             //main.initGraphProblems()
-            main.initHeapProblems()
+            //main.initHeapProblems()
         }
     }
 
@@ -125,7 +125,8 @@ class Main {
        // val problem = NonOverlappingIntervals()
         //val problem = IncreasingTriplet()
         //val problem = ProductExceptSelf()
-        val problem = SubArraySumK()
+        //val problem = SubArraySumK()
+        val problem = SearchInRotatedArray()
         problem.solve()
     }
 
