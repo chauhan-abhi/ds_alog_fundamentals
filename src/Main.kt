@@ -11,8 +11,8 @@ class Main {
         @JvmStatic
         fun main(args: Array<String>) {
             val main = Main()
-            main.initArrayProblems()
-            //main.initMatrixProblems()
+            //main.initArrayProblems()
+            main.initMatrixProblems()
             // main.initStringProblems()
             // main.initStackProblems()
             // main.initTreeProblems()
@@ -30,9 +30,9 @@ class Main {
     }
 
     private fun initMatrixProblems() {
-        //val problem = SpiralMatrix()
+        val problem = SpiralMatrix()
         //val problem = MatrixReshape()
-        val problem = MatrixSearchII()
+        //val problem = MatrixSearchII()
         //val problem = MatrixSearch()
         problem.solve()
     }
