@@ -122,12 +122,13 @@ class Main {
         //val problem = MajorityNumber()
         //val problem = SortColors()
         //val problem = MergeIntervals()
-       // val problem = NonOverlappingIntervals()
+        //val problem = NonOverlappingIntervals()
         //val problem = IncreasingTriplet()
         //val problem = ProductExceptSelf()
         //val problem = SubArraySumK()
         //val problem = SearchInRotatedArray()
-        val problem = RangeSearchArray()
+        //val problem = RangeSearchArray()
+        val problem = Permutations()
         problem.solve()
     }
 
