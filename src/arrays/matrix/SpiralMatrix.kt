@@ -3,7 +3,7 @@ package arrays.matrix
 import BaseProblem
 import Problem
 
-
+// https://leetcode.com/problems/spiral-matrix/
 class SpiralMatrix: BaseProblem(), Problem {
     /*
     *1 2 3
@@ -35,11 +35,42 @@ class SpiralMatrix: BaseProblem(), Problem {
         return result
     }
 
+    private fun spiralOrder(matrix: Array<IntArray>): List<Int> {
+        val result = arrayListOf<Int>()
+        val numRows = matrix.size
+        val numCols = matrix[0].size
+
+        var startRow = 0
+        var startCol = 0
+        var endRow = numRows-1
+        var endCol = numCols-1
+
+        while (startRow <= endRow && startCol <= endCol) {
+            for (i in startCol..endCol) result.add(matrix[startRow][i])
+            startRow++
+            for (i in startRow..endRow) result.add(matrix[i][endCol])
+            endCol--
+
+            if (startRow<=endRow)
+            for (i in endCol downTo startCol) result.add(matrix[endRow][i])
+            endRow--
+            if (startCol<=endCol)
+            for (i in endRow downTo startRow)  result.add(matrix[i][startCol])
+            startCol++
+        }
+
+        return result
+    }
+
     override fun solve() {
         val res = generate(3)
         val res1 = generate(4)
         printMatrix(res)
         printMatrix(res1)
+
+        val mat = arrayOf(intArrayOf(1,2,3,4), intArrayOf(5,6,7,8), intArrayOf(9,10,11,12))
+        //printMatrix(mat)
+        println(spiralOrder(mat))
     }
 
     private fun printMatrix(array: Array<IntArray>) {
