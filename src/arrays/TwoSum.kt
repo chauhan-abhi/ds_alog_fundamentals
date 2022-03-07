@@ -4,7 +4,7 @@ import Problem
 
 class TwoSum: Problem {
 
-    fun twoSum(list: List<Int>, sum: Int) : IntArray {
+    private fun twoSum(list: List<Int>, sum: Int) : IntArray {
         var diff: Int
         val map = HashSet<Int>()
         for(element in list) {
@@ -15,7 +15,7 @@ class TwoSum: Problem {
         return intArrayOf()
     }
 
-    fun twoSumIndex(nums: IntArray, target: Int): IntArray {
+    private fun twoSumIndex(nums: IntArray, target: Int): IntArray {
         var diff: Int
         val map = HashMap<Int, Int>()
         for(i in nums.indices) {

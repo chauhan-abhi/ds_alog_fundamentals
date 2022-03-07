@@ -32,10 +32,10 @@ class LongestPalindromicSubstring : Problem {
         var maxL = 0
         for (end in s.indices) {
             if (map.containsKey(s[end])) {
-                start = Math.max(start, map[s[end]]!! + 1)
+                start = start.coerceAtLeast(map[s[end]]!! + 1)
             }
             map[s[end]] = end
-            maxL = Math.max(maxL, end-start+1)
+            maxL = maxL.coerceAtLeast(end - start + 1)
         }
         return maxL
     }
@@ -55,6 +55,7 @@ class LongestPalindromicSubstring : Problem {
     override fun solve() {
         println(longestPalindrome("babad"))
         println(longestPalindrome("cbbd"))
+        println(longestSubsequenceWithoutRepetition("abcabcbb"))
 
     }
 }
