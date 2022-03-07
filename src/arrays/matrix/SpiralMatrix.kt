@@ -69,7 +69,6 @@ class SpiralMatrix: BaseProblem(), Problem {
         printMatrix(res1)
 
         val mat = arrayOf(intArrayOf(1,2,3,4), intArrayOf(5,6,7,8), intArrayOf(9,10,11,12))
-        //printMatrix(mat)
         println(spiralOrder(mat))
     }
 

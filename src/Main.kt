@@ -1,5 +1,6 @@
 import arrays.matrix.*
 import arrays.medium.*
+import arrays.hard.*
 import graph.*
 import heap.*
 import linklist.*
@@ -11,8 +12,8 @@ class Main {
         @JvmStatic
         fun main(args: Array<String>) {
             val main = Main()
-            //main.initArrayProblems()
-            main.initMatrixProblems()
+            main.initArrayProblems()
+            //main.initMatrixProblems()
             // main.initStringProblems()
             // main.initStackProblems()
             // main.initTreeProblems()
@@ -128,7 +129,8 @@ class Main {
         //val problem = SubArraySumK()
         //val problem = SearchInRotatedArray()
         //val problem = RangeSearchArray()
-        val problem = Permutations()
+        // val problem = Permutations()
+        val problem = MedianOfTwoArrays()
         problem.solve()
     }
 
