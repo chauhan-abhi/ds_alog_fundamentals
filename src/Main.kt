@@ -12,12 +12,12 @@ class Main {
         @JvmStatic
         fun main(args: Array<String>) {
             val main = Main()
-            //main.initArrayProblems()
+            main.initArrayProblems()
             //main.initMatrixProblems()
             // main.initStringProblems()
             // main.initStackProblems()
             // main.initTreeProblems()
-             main.initLinkListProblems()
+            // main.initLinkListProblems()
             //main.initGraphProblems()
             //main.initHeapProblems()
         }
@@ -132,7 +132,8 @@ class Main {
         //val problem = SearchInRotatedArray()
         //val problem = RangeSearchArray()
         // val problem = Permutations()
-        val problem = MedianOfTwoArrays()
+        // val problem = MedianOfTwoArrays()
+        val problem = FirstMissingNumber()
         problem.solve()
     }
 
