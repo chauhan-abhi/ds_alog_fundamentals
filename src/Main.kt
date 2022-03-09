@@ -12,9 +12,9 @@ class Main {
         @JvmStatic
         fun main(args: Array<String>) {
             val main = Main()
-            main.initArrayProblems()
+            //main.initArrayProblems()
             //main.initMatrixProblems()
-            // main.initStringProblems()
+             main.initStringProblems()
             // main.initStackProblems()
             // main.initTreeProblems()
             // main.initLinkListProblems()
@@ -54,7 +54,8 @@ class Main {
         //val problem = GroupAnagrams()
         //val problem = MultiplyStrings()
         //val problem = RepeatedDNA()
-        val problem = LongestPalindromicSubstring()
+        //val problem = LongestPalindromicSubstring()
+        val problem = GenerateParenthesis()
 
         problem.solve()
     }
