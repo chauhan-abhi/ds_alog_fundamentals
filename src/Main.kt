@@ -1,6 +1,7 @@
 import arrays.matrix.*
 import arrays.medium.*
 import arrays.hard.*
+import arrays.*
 import graph.*
 import heap.*
 import linklist.*
@@ -105,6 +106,7 @@ class Main {
 
     fun initArrayProblems() {
         // val problem = SortedSquaresArray()
+         val problem = RemoveDuplicatesInPlace()
         // val problem = ValidSubsequence()
         // val problem = TwoSum()
         // val problem = ThreeSum()
@@ -133,7 +135,7 @@ class Main {
         //val problem = RangeSearchArray()
         // val problem = Permutations()
         // val problem = MedianOfTwoArrays()
-        val problem = FirstMissingNumber()
+        //val problem = FirstMissingNumber()
         problem.solve()
     }
 
