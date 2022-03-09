@@ -14,10 +14,10 @@ class Main {
             val main = Main()
             //main.initArrayProblems()
             //main.initMatrixProblems()
-             main.initStringProblems()
+            // main.initStringProblems()
             // main.initStackProblems()
             // main.initTreeProblems()
-            // main.initLinkListProblems()
+             main.initLinkListProblems()
             //main.initGraphProblems()
             //main.initHeapProblems()
         }
@@ -78,7 +78,8 @@ class Main {
         //val problem = SwapNodes()
         //val problem = ReorderList()
         //val problem = ReverseNodeInKGroup()
-        val problem = FindWinner()
+        //val problem = FindWinner()
+        val problem = MergeKSortedLists()
         problem.solve()
     }
 
