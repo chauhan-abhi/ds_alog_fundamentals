@@ -39,17 +39,56 @@ class ReverseNodeInKGroup: Problem {
         return first
     }
 
+    // https://leetcode.com/problems/reverse-linked-list-ii/
+    private fun reverseBetween(head: Node?, left: Int, right: Int): Node? {
+
+        val dummy = Node(0)
+        dummy.next = head
+
+        var curr1: Node? = dummy
+        var pre1: Node? = null
+
+        for (i in 0 until left) {
+            pre1 = curr1
+            curr1 = curr1?.next
+        }
+
+        var curr2: Node? = curr1
+        var pre2: Node? = pre1
+        var next: Node?
+
+        for (i in left..right) {
+            next = curr2?.next
+            curr2?.next = pre2
+            pre2 = curr2
+            curr2 = next
+        }
+        pre1?.next = pre2
+        curr1?.next = curr2
+
+
+        return dummy.next
+    }
+
 
 
     override fun solve() {
         val root = Node(1)
-        root.next = Node(4)
-        root.next?.next = Node(5)
-        root.next?.next?.next= Node(8)
-        root.next?.next?.next?.next= Node(2)
-        root.next?.next?.next?.next?.next= Node(3)
+        root.next = Node(2)
+        root.next?.next = Node(3)
+        root.next?.next?.next= Node(4)
+        root.next?.next?.next?.next= Node(5)
+        root.next?.next?.next?.next?.next= Node(6)
 
-        var modifiedRoot = reverseKGroup(root, 2)
+        val modifiedRoot = reverseKGroup(root, 2)
+        val problem2Root = reverseBetween(root, 2, 4)
+
+        printList(modifiedRoot)
+        printList(problem2Root)
+    }
+
+    private fun printList(root: Node?) {
+        var modifiedRoot = root
         while (modifiedRoot != null) {
             print("${modifiedRoot.value} ")
             modifiedRoot = modifiedRoot.next
