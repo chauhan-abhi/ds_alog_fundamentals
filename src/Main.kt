@@ -13,14 +13,14 @@ class Main {
         @JvmStatic
         fun main(args: Array<String>) {
             val main = Main()
-            main.initArrayProblems()
-            //main.initMatrixProblems()
+            // main.initArrayProblems()
+            // main.initMatrixProblems()
             // main.initStringProblems()
             // main.initStackProblems()
             // main.initTreeProblems()
-            // main.initLinkListProblems()
-            //main.initGraphProblems()
-            //main.initHeapProblems()
+             main.initLinkListProblems()
+            // main.initGraphProblems()
+            // main.initHeapProblems()
         }
     }
 
@@ -78,9 +78,9 @@ class Main {
         //val problem = IntersectionNode()
         //val problem = SwapNodes()
         //val problem = ReorderList()
-        //val problem = ReverseNodeInKGroup()
+        val problem = ReverseNodeInKGroup()
         //val problem = FindWinner()
-        val problem = MergeKSortedLists()
+        //val problem = MergeKSortedLists()
         problem.solve()
     }
 
