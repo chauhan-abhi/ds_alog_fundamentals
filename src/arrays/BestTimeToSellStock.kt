@@ -10,6 +10,7 @@ import kotlin.math.max
 class BestTimeToSellStock : Problem {
 
     private fun bestTimeToSellStock(prices: IntArray): Int {
+
         if (prices.size <= 1) return 0
         var max = 0
         var minSoFar = prices[0]

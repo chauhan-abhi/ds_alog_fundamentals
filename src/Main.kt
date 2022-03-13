@@ -8,6 +8,7 @@ import linklist.*
 import stack.*
 import trees.*
 import strings.medium.*
+import strings.hard.*
 class Main {
     companion object {
         @JvmStatic
@@ -15,10 +16,10 @@ class Main {
             val main = Main()
             // main.initArrayProblems()
             // main.initMatrixProblems()
-            // main.initStringProblems()
+             main.initStringProblems()
             // main.initStackProblems()
             // main.initTreeProblems()
-             main.initLinkListProblems()
+            // main.initLinkListProblems()
             // main.initGraphProblems()
             // main.initHeapProblems()
         }
@@ -56,7 +57,8 @@ class Main {
         //val problem = MultiplyStrings()
         //val problem = RepeatedDNA()
         //val problem = LongestPalindromicSubstring()
-        val problem = GenerateParenthesis()
+        //val problem = GenerateParenthesis()
+        val problem = IntegerToWords()
 
         problem.solve()
     }
