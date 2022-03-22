@@ -1,22 +1,19 @@
 import arrays.matrix.*
 import arrays.medium.*
-import arrays.hard.*
-import arrays.*
 import graph.*
 import heap.*
 import linklist.*
 import stack.*
 import trees.*
-import strings.medium.*
 import strings.hard.*
 class Main {
     companion object {
         @JvmStatic
         fun main(args: Array<String>) {
             val main = Main()
-            // main.initArrayProblems()
+             main.initArrayProblems()
             // main.initMatrixProblems()
-             main.initStringProblems()
+            // main.initStringProblems()
             // main.initStackProblems()
             // main.initTreeProblems()
             // main.initLinkListProblems()
@@ -108,7 +105,7 @@ class Main {
 
     fun initArrayProblems() {
         // val problem = SortedSquaresArray()
-         val problem = RemoveDuplicatesInPlace()
+        // val problem = RemoveDuplicatesInPlace()
         // val problem = ValidSubsequence()
         // val problem = TwoSum()
         // val problem = ThreeSum()
@@ -138,6 +135,7 @@ class Main {
         // val problem = Permutations()
         // val problem = MedianOfTwoArrays()
         //val problem = FirstMissingNumber()
+        val problem = EqualSubsetSumPartition()
         problem.solve()
     }
 
