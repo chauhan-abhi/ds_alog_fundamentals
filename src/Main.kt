@@ -135,7 +135,7 @@ class Main {
         // val problem = Permutations()
         // val problem = MedianOfTwoArrays()
         //val problem = FirstMissingNumber()
-        val problem = EqualSubsetSumPartition()
+        val problem = SubsetSumProblemSet()
         problem.solve()
     }
 
