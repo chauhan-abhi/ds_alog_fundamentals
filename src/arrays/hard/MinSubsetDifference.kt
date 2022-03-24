@@ -47,12 +47,44 @@ class MinSubsetDifference: Problem {
         return diff
     }
 
+    // Count the number of subset with a given difference
+    /*
+    *  S1+ S2 = totalSum
+    *  S1- S2 = targetDiff
+    *  S1 = (totalSum + targetDiff)/2
+    *
+    *  problem breaks to find count of subset having target as (totalSum + targetDiff)/2
+    * */
+    private fun countOfSubsetHavingDifference(nums: IntArray, targetDiff: Int): Int {
+        var totalSum = 0
+        for (x in nums) { totalSum += x }
+
+        val targetSum = (totalSum + targetDiff)/2
+        return subsetSumCountGeneric(nums, targetSum)
+    }
+
+    private fun subsetSumCountGeneric(nums: IntArray, target: Int): Int {
+        val dp = Array(nums.size+1) { IntArray(target+1) }
+        for (i in dp.indices) { dp[i][0] = 1 }
+
+        for (i in 1 until dp.size) {
+            for (j in 1 until dp[0].size) {
+                if (nums[i-1] <= j) {
+                    dp[i][j] = dp[i-1][j-nums[i-1]] + dp[i-1][j]
+                } else dp[i][j] = dp[i-1][j]
+            }
+        }
+        return dp[nums.size][target]
+    }
+
 
     override fun solve() {
         val input1 = intArrayOf(1, 6, 11, 5)
         val input2 = intArrayOf( 3, 1, 4, 2, 2, 1 )
+        val input3 = intArrayOf( 1, 1, 2, 3 )
         println(minimumDifference(input1))
         println(minimumDifference(input2))
+        println(countOfSubsetHavingDifference(input3, 1))
 
     }
 }
