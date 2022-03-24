@@ -1,3 +1,4 @@
+import arrays.hard.*
 import arrays.matrix.*
 import arrays.medium.*
 import graph.*
@@ -135,7 +136,8 @@ class Main {
         // val problem = Permutations()
         // val problem = MedianOfTwoArrays()
         //val problem = FirstMissingNumber()
-        val problem = SubsetSumProblemSet()
+        //val problem = SubsetSumProblemSet()
+        val problem = MinSubsetDifference()
         problem.solve()
     }
 
