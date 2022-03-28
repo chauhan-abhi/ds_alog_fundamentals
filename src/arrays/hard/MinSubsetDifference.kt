@@ -48,6 +48,7 @@ class MinSubsetDifference: Problem {
     }
 
     // Count the number of subset with a given difference
+    // https://leetcode.com/problems/target-sum/
     /*
     *  S1+ S2 = totalSum
     *  S1- S2 = targetDiff
