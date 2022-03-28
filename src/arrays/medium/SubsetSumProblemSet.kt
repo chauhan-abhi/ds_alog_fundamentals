@@ -45,6 +45,8 @@ class SubsetSumProblemSet: Problem {
     // https://leetcode.com/problems/target-sum/
     /*
     * Divide into two subsets S1, S2 such that
+    * where S1 contains all elements that will take + elements
+    * where S1 contains all elements that will take - elements
     * S1+S2 = totalSum
     * S2-S2 = targetSum
     * S1 = (totalSum + target)/2

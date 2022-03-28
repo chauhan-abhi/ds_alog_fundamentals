@@ -9,6 +9,7 @@ import trees.*
 import strings.hard.*
 class Main {
     companion object {
+        // https://github.com/MysteryVaibhav/leetcode_company_wise_questions
         @JvmStatic
         fun main(args: Array<String>) {
             val main = Main()
