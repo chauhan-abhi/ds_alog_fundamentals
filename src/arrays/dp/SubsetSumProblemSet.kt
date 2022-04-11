@@ -1,8 +1,9 @@
-package arrays.medium
+package arrays.dp
 
 import Problem
 import kotlin.math.abs
 
+// #Knapsack 0-1
 class SubsetSumProblemSet: Problem {
 
     private fun subsetSum(nums: IntArray, target: Int): Boolean {
