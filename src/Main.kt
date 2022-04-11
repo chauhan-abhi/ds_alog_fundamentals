@@ -1,6 +1,5 @@
-import arrays.hard.*
+import algorithm.ZomatoInterview
 import arrays.matrix.*
-import arrays.medium.*
 import graph.*
 import heap.*
 import linklist.*
@@ -106,6 +105,7 @@ class Main {
     }
 
     fun initArrayProblems() {
+        val problem = ZomatoInterview()
         // val problem = SortedSquaresArray()
         // val problem = RemoveDuplicatesInPlace()
         // val problem = ValidSubsequence()
@@ -138,7 +138,7 @@ class Main {
         // val problem = MedianOfTwoArrays()
         //val problem = FirstMissingNumber()
         //val problem = SubsetSumProblemSet()
-        val problem = MinSubsetDifference()
+        //val problem = MinSubsetDifference()
         problem.solve()
     }
 

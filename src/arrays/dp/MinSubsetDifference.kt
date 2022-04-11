@@ -1,8 +1,8 @@
-package arrays.hard
+package arrays.dp
 
 import Problem
-import kotlin.math.abs
 
+// #Knapsack 0-1
 // https://www.geeksforgeeks.org/partition-a-set-into-two-subsets-such-that-the-difference-of-subset-sums-is-minimum/
 class MinSubsetDifference: Problem {
 
