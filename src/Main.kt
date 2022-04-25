@@ -1,4 +1,6 @@
-import algorithm.ZomatoInterview
+import arrays.dp.KnapSack0_1Variations
+import arrays.dp.UnboundedKnapsackProblems
+import interview.ZomatoInterview
 import arrays.matrix.*
 import graph.*
 import heap.*
@@ -105,7 +107,7 @@ class Main {
     }
 
     fun initArrayProblems() {
-        val problem = ZomatoInterview()
+        //val problem = ZomatoInterview()
         // val problem = SortedSquaresArray()
         // val problem = RemoveDuplicatesInPlace()
         // val problem = ValidSubsequence()
@@ -137,8 +139,12 @@ class Main {
         // val problem = Permutations()
         // val problem = MedianOfTwoArrays()
         //val problem = FirstMissingNumber()
+
+        // Dp problems
         //val problem = SubsetSumProblemSet()
         //val problem = MinSubsetDifference()
+        val problem = UnboundedKnapsackProblems()
+        //val problem = KnapSack0_1Variations()
         problem.solve()
     }
 
