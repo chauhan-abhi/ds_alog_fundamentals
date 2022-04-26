@@ -1,6 +1,8 @@
 package strings.easy
 
 import Problem
+import java.lang.StringBuilder
+
 
 /*
 * Roman numerals are represented by seven different symbols: I, V, X, L, C, D and M.
@@ -78,8 +80,36 @@ class RomanToInteger: Problem {
         return res
     }
 
-    fun cleanRomanToInt(s: String?): Int {
+    //https://leetcode.com/problems/roman-to-integer/
+    private fun cleanRomanToInt(s: String?): Int {
         if (s == null || s.isEmpty()) return -1
+        val map = getRomanMap()
+        val len = s.length
+        var result =  map.getOrDefault(s[len-1], 0)
+        for (i in len - 2 downTo 0) {
+            if (map.getOrDefault(s[i], 0) >= map.getOrDefault(s[i+1], 0))
+                result += map.getOrDefault(s[i], 0)
+            else result -= map.getOrDefault(s[i], 0)
+        }
+        return result
+    }
+
+    private fun intToRoman(num: Int): String {
+        val values = intArrayOf(1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1)
+        val romanLiterals = arrayOf("M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I")
+        var temp = num
+        val sb = StringBuilder()
+        for (i in values.indices) {
+            if (temp >= values[i]) {
+                sb.append(romanLiterals[i])
+                temp -= values[i]
+            }
+        }
+        return sb.toString()
+
+    }
+
+    private fun getRomanMap(): HashMap<Char, Int> {
         val map = HashMap<Char, Int>()
         map['I'] = 1
         map['V'] = 5
@@ -88,20 +118,16 @@ class RomanToInteger: Problem {
         map['C'] = 100
         map['D'] = 500
         map['M'] = 1000
-        val len = s.length
-        var result = map[s[len - 1]]!!
-        for (i in len - 2 downTo 0) {
-            if (map[s[i]]!! >= map[s[i + 1]]!!)
-                result += map[s[i]]!!
-            else result -= map[s[i]]!!
-        }
-        return result
+        return map
     }
 
     override fun solve() {
         println(romanToInt("LVIII"))
         println(romanToInt("III"))
         println(romanToInt("MCMXCIV"))
-        println(cleanRomanToInt("MCMXCIV"))
+        val roman = cleanRomanToInt("MCMXCIV")
+        println(intToRoman(roman))
     }
+
+
 }
