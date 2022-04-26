@@ -43,8 +43,10 @@ class ZomatoInterview: Problem {
         return count
     }
 
+
+
     override fun solve() {
-        //println(encoding("aabbbccccda"))
+        println(encoding("aabbbccccda"))
         println(numSubarrayProductLessThanK(intArrayOf(10,5,2,6), 100))
         println(numSubarrayProductLessThanK(intArrayOf(1,2,3), 0))
     }

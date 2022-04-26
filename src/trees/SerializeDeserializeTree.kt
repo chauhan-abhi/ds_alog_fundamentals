@@ -20,7 +20,7 @@ class SerializeDeserializeTree: BaseTreeProblem(), Problem {
 
     private fun deserialize(parts: MutableList<String>): TreeNode? = parts.takeUnless { it.isEmpty() }?.let {
             strings ->
-        strings.removeAt(0).let { first ->
+        strings.removeFirst().let { first ->
             first.takeUnless { it == "null" }?.let { numStr ->
                 TreeNode(numStr.toInt()).apply {
                     this.left = deserialize(strings)

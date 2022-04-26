@@ -25,6 +25,24 @@ class SubArraySumK: Problem {
 
     }
 
+    // https://leetcode.com/problems/subarray-sums-divisible-by-k/
+    private fun subarraysDivByK(nums: IntArray, k: Int): Int {
+        val map = hashMapOf<Int, Int>()
+        map[0] = 1
+        var count = 0
+        var sum = 0
+        for (x in nums) {
+            sum = (sum + x) % k
+            if (sum < 0 ) sum += k
+            count += map.getOrDefault(sum, 0)
+            map[sum] = map.getOrDefault(sum, 0) + 1
+
+        }
+        return count
+    }
+
+
+
     override fun solve() {
         val input = intArrayOf(1,2,3)
         val input2 = intArrayOf(1,1,1)
@@ -32,5 +50,6 @@ class SubArraySumK: Problem {
         println(subArraySum(input, 3))
         println(subArraySum(input2, 2))
         println(subArraySum(input3, 7))
+        println(subarraysDivByK(input3, 2))
     }
 }
