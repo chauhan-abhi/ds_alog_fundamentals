@@ -1,4 +1,5 @@
 import arrays.dp.KnapSack0_1Variations
+import arrays.dp.LetterCombinationsOfPhone
 import arrays.dp.UnboundedKnapsackProblems
 import interview.ZomatoInterview
 import arrays.matrix.*
@@ -8,18 +9,20 @@ import linklist.*
 import stack.*
 import trees.*
 import strings.hard.*
+import strings.easy.*
 class Main {
     companion object {
         // https://github.com/MysteryVaibhav/leetcode_company_wise_questions
         // https://github.com/krishnadey30/LeetCode-Questions-CompanyWise
+        // https://leetcode.com/problems/permutations/discuss/18239/A-general-approach-to-backtracking-questions-in-Java-(Subsets-Permutations-Combination-Sum-Palindrome-Partioning)
         @JvmStatic
         fun main(args: Array<String>) {
             val main = Main()
-            // main.initArrayProblems()
+             main.initArrayProblems()
             // main.initMatrixProblems()
             // main.initStringProblems()
             // main.initStackProblems()
-             main.initTreeProblems()
+            // main.initTreeProblems()
             // main.initLinkListProblems()
             // main.initGraphProblems()
             // main.initHeapProblems()
@@ -45,7 +48,7 @@ class Main {
         // val problem = FirstUniqueCharacter()
         // val problem = RansomNote()
         // val problem = ValidAnagram()
-        // val problem = RomanToInteger()
+        val problem = RomanToInteger()
         // val problem = LongestCommonPrefix()
         // val problem = StrStr()
         // val problem = LengthOfLastWord()
@@ -59,7 +62,7 @@ class Main {
         //val problem = RepeatedDNA()
         //val problem = LongestPalindromicSubstring()
         //val problem = GenerateParenthesis()
-        val problem = IntegerToWords()
+        //val problem = IntegerToWords()
 
         problem.solve()
     }
@@ -145,8 +148,10 @@ class Main {
         // Dp problems
         //val problem = SubsetSumProblemSet()
         //val problem = MinSubsetDifference()
-        val problem = UnboundedKnapsackProblems()
+        //val problem = UnboundedKnapsackProblems()
         //val problem = KnapSack0_1Variations()
+        val problem = LetterCombinationsOfPhone()
+
         problem.solve()
     }
 
