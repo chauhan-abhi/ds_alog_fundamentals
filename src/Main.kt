@@ -11,14 +11,15 @@ import strings.hard.*
 class Main {
     companion object {
         // https://github.com/MysteryVaibhav/leetcode_company_wise_questions
+        // https://github.com/krishnadey30/LeetCode-Questions-CompanyWise
         @JvmStatic
         fun main(args: Array<String>) {
             val main = Main()
-             main.initArrayProblems()
+            // main.initArrayProblems()
             // main.initMatrixProblems()
             // main.initStringProblems()
             // main.initStackProblems()
-            // main.initTreeProblems()
+             main.initTreeProblems()
             // main.initLinkListProblems()
             // main.initGraphProblems()
             // main.initHeapProblems()
@@ -102,7 +103,8 @@ class Main {
         //val problem = PathSumII()
         //val problem = RightViewTree()
         //val problem = KthSmallestNode()
-        val problem = LowestCommonAncestor()
+        //val problem = LowestCommonAncestor()
+        val problem = MaxPathSumDp()
         problem.solve()
     }
 
