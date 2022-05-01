@@ -148,9 +148,9 @@ class Main {
         // Dp problems
         //val problem = SubsetSumProblemSet()
         //val problem = MinSubsetDifference()
-        //val problem = UnboundedKnapsackProblems()
+        val problem = UnboundedKnapsackProblems()
         //val problem = KnapSack0_1Variations()
-        val problem = LetterCombinationsOfPhone()
+        //val problem = LetterCombinationsOfPhone()
 
         problem.solve()
     }
