@@ -1,6 +1,4 @@
-import arrays.dp.KnapSack0_1Variations
-import arrays.dp.LetterCombinationsOfPhone
-import arrays.dp.UnboundedKnapsackProblems
+import arrays.dp.*
 import interview.ZomatoInterview
 import arrays.matrix.*
 import graph.*
@@ -148,8 +146,9 @@ class Main {
         // Dp problems
         //val problem = SubsetSumProblemSet()
         //val problem = MinSubsetDifference()
-        val problem = UnboundedKnapsackProblems()
+        //val problem = UnboundedKnapsackProblems()
         //val problem = KnapSack0_1Variations()
+        val problem = LongestCommonSubsequence()
         //val problem = LetterCombinationsOfPhone()
 
         problem.solve()
