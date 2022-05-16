@@ -54,7 +54,7 @@ class UnboundedKnapsackProblems : Problem {
         val W = amount
         val dp = Array(N + 1) { IntArray(W + 1) }
         for (i in 0 until W + 1) {
-            dp[0][i] = Int.MAX_VALUE - 1
+            dp[0][i] = Int.MAX_VALUE - 1 // prevent overflow when later + 1
         }
         for (j in 1 until W + 1) {
             dp[1][j] = if (j % coins[0] == 0) j / coins[0] else Int.MAX_VALUE - 1
