@@ -40,46 +40,43 @@ class LongestCommonSubsequence: Problem {
         return res
     }
 
-    /*private fun smallestSuperSequence(x: String, y: String, m: Int, n: Int): String {
+    private fun smallestSuperSequence(x: String, y: String, m: Int, n: Int): String {
         val dp = computeLcs(x,y,m, n)
-        //println(m+n-dp[m][n])
+        println(m+n-dp[m][n])
         var ii = m
         var jj = n
         var res = ""
         while (ii > 0 && jj > 0) {
             if (x[ii - 1] == y[jj - 1]) {
-                res = x[ii - 1] + res
+                res += x[ii - 1]
                 ii--
                 jj--
             }
-            when {
-                // only one string reaches left end.
-                ((ii <= 0)xor(jj <= 0)) -> {
-                    res = if (ii <= 0 ) y[jj--] + res else x[ii--] + res
-                }
-                // common char in LCS
-                x[ii - 1] == y[jj - 1] -> {
-                    // append the char of either s1 or s2.
-                    res = x[ii - 1] + res
-                    ii--
-                    jj--
-                }
-                // char is not in LCS
-                else -> {
-                   val ch = if (dp[ii-1][jj] > dp[ii][jj-1]) x[ii--] else y[jj--]
-                    res = ch + res
-                }
+            else if (dp[ii-1][jj] > dp[ii][jj-1]) {
+                res += x[ii-1]
+                ii--
+            } else {
+                res += y[jj-1]
+                jj--
             }
         }
 
-        return res
+        while (ii > 0) {
+            res += x[ii-1]
+            ii--
+        }
+        while (jj > 0) {
+            res += y[jj-1]
+            jj--
+        }
+
+        return res.reversed()
     }
-*/
 
     override fun solve() {
         println(printLcs("abcdgf", "abedfhr", 6, 7))
-        //println(smallestSuperSequence("AGGTAB", "GXTXAYB", 6, 7))
-        //println(smallestSuperSequence("abac", "cab", 4, 3))
+        println(smallestSuperSequence("AGGTAB", "GXTXAYB", 6, 7))
+        println(smallestSuperSequence("abac", "cab", 4, 3))
 
     }
 }
