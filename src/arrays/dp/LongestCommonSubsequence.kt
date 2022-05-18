@@ -73,10 +73,21 @@ class LongestCommonSubsequence: Problem {
         return res.reversed()
     }
 
+    private fun minInsertionDeletion(x: String, y: String) {
+        val m = x.length
+        val n = y.length
+
+        val dp = computeLcs(x,y,m,n)
+        val LCS = dp[m][n]
+        println("${n-LCS} Insertions |  ${m-LCS} Deletions")
+    }
+
     override fun solve() {
         println(printLcs("abcdgf", "abedfhr", 6, 7))
         println(smallestSuperSequence("AGGTAB", "GXTXAYB", 6, 7))
         println(smallestSuperSequence("abac", "cab", 4, 3))
+        minInsertionDeletion("heap", "pea")
+        minInsertionDeletion("pea", "heap")
 
     }
 }
