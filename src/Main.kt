@@ -1,3 +1,4 @@
+import arrays.RemoveDuplicatesInPlace
 import arrays.dp.*
 import interview.ZomatoInterview
 import arrays.matrix.*
@@ -112,7 +113,7 @@ class Main {
     fun initArrayProblems() {
         //val problem = ZomatoInterview()
         // val problem = SortedSquaresArray()
-        // val problem = RemoveDuplicatesInPlace()
+         val problem = RemoveDuplicatesInPlace()
         // val problem = ValidSubsequence()
         // val problem = TwoSum()
         // val problem = ThreeSum()
@@ -148,7 +149,7 @@ class Main {
         //val problem = MinSubsetDifference()
         //val problem = UnboundedKnapsackProblems()
         //val problem = KnapSack0_1Variations()
-        val problem = LongestCommonSubsequence()
+        //val problem = LongestCommonSubsequence()
         //val problem = LetterCombinationsOfPhone()
 
         problem.solve()
