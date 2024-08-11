@@ -1,4 +1,4 @@
-package algorithm
+package algorithm.binarySearch
 
 import BaseProblem
 import Problem

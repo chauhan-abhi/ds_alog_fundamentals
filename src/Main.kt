@@ -1,3 +1,4 @@
+import algorithm.binarySearch.PeakElement
 import arrays.RemoveDuplicatesInPlace
 import arrays.dp.*
 import interview.ZomatoInterview
@@ -113,7 +114,7 @@ class Main {
     fun initArrayProblems() {
         //val problem = ZomatoInterview()
         // val problem = SortedSquaresArray()
-         val problem = RemoveDuplicatesInPlace()
+//         val problem = RemoveDuplicatesInPlace()
         // val problem = ValidSubsequence()
         // val problem = TwoSum()
         // val problem = ThreeSum()
@@ -151,7 +152,7 @@ class Main {
         //val problem = KnapSack0_1Variations()
         //val problem = LongestCommonSubsequence()
         //val problem = LetterCombinationsOfPhone()
-
+        val problem = PeakElement()
         problem.solve()
     }
 

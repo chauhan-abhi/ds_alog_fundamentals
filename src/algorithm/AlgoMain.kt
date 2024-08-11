@@ -1,5 +1,7 @@
 package algorithm
 
+import algorithm.binarySearch.BinarySearch
+
 class AlgoMain {
 
     companion object {
