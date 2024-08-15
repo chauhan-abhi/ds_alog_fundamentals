@@ -1,4 +1,6 @@
+import algorithm.binarySearch.AllocateProblem
 import algorithm.binarySearch.PeakElement
+import algorithm.binarySearch.SplitLargestSum
 import arrays.RemoveDuplicatesInPlace
 import arrays.dp.*
 import interview.ZomatoInterview
@@ -145,6 +147,12 @@ class Main {
         // val problem = MedianOfTwoArrays()
         //val problem = FirstMissingNumber()
 
+        /* ------------------ Binary Search Problems -----------------*/
+        // val problem = PeakElement()
+        // val problem = AllocateProblem()
+        val problem = SplitLargestSum()
+
+
         // Dp problems
         //val problem = SubsetSumProblemSet()
         //val problem = MinSubsetDifference()
@@ -152,7 +160,7 @@ class Main {
         //val problem = KnapSack0_1Variations()
         //val problem = LongestCommonSubsequence()
         //val problem = LetterCombinationsOfPhone()
-        val problem = PeakElement()
+
         problem.solve()
     }
 
