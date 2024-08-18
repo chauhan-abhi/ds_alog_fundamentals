@@ -82,7 +82,7 @@ class RomanToInteger: Problem {
 
     //https://leetcode.com/problems/roman-to-integer/
     private fun cleanRomanToInt(s: String?): Int {
-        if (s == null || s.isEmpty()) return -1
+        if (s.isNullOrEmpty()) return -1
         val map = getRomanMap()
         val len = s.length
         var result =  map.getOrDefault(s[len-1], 0)

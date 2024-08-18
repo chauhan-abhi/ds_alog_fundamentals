@@ -20,9 +20,9 @@ class Main {
         @JvmStatic
         fun main(args: Array<String>) {
             val main = Main()
-             main.initArrayProblems()
+            // main.initArrayProblems()
             // main.initMatrixProblems()
-            // main.initStringProblems()
+            main.initStringProblems()
             // main.initStackProblems()
             // main.initTreeProblems()
             // main.initLinkListProblems()
@@ -50,7 +50,7 @@ class Main {
         // val problem = FirstUniqueCharacter()
         // val problem = RansomNote()
         // val problem = ValidAnagram()
-        val problem = RomanToInteger()
+        // val problem = RomanToInteger()
         // val problem = LongestCommonPrefix()
         // val problem = StrStr()
         // val problem = LengthOfLastWord()
@@ -65,6 +65,7 @@ class Main {
         //val problem = LongestPalindromicSubstring()
         //val problem = GenerateParenthesis()
         //val problem = IntegerToWords()
+        val problem = FindAnagram()
 
         problem.solve()
     }
@@ -167,5 +168,9 @@ class Main {
     fun initGraphProblems() {
         val problem = KeysAndRoom()
         problem.solve()
+    }
+
+    fun leetcodeArticles() {
+        // https://leetcode.com/discuss/interview-question/3100856/Fixed-Size-Sliding-Window-(Important-Questions-with-Solutions)
     }
 }
