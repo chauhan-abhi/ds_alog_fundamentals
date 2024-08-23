@@ -1,7 +1,9 @@
-package strings.easy
+package strings.slidingwindow
 
 import Problem
 
+// Sliding Window
+// https://leetcode.com/problems/find-all-anagrams-in-a-string/
 class FindAnagram : Problem {
 
     private fun findAnagrams(s: String, p: String): List<Int> {

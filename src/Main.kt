@@ -1,17 +1,13 @@
-import algorithm.binarySearch.AllocateProblem
-import algorithm.binarySearch.PeakElement
 import algorithm.binarySearch.SplitLargestSum
-import arrays.RemoveDuplicatesInPlace
-import arrays.dp.*
-import interview.ZomatoInterview
 import arrays.matrix.*
 import graph.*
 import heap.*
 import linklist.*
 import stack.*
 import trees.*
-import strings.hard.*
-import strings.easy.*
+import strings.slidingwindow.FindAnagram
+import strings.slidingwindow.SlidingWindowMaximum
+
 class Main {
     companion object {
         // https://github.com/MysteryVaibhav/leetcode_company_wise_questions
@@ -65,7 +61,8 @@ class Main {
         //val problem = LongestPalindromicSubstring()
         //val problem = GenerateParenthesis()
         //val problem = IntegerToWords()
-        val problem = FindAnagram()
+        //val problem = FindAnagram()
+        val problem = SlidingWindowMaximum()
 
         problem.solve()
     }
