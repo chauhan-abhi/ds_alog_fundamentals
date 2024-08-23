@@ -61,8 +61,8 @@ class Main {
         //val problem = LongestPalindromicSubstring()
         //val problem = GenerateParenthesis()
         //val problem = IntegerToWords()
-        //val problem = FindAnagram()
-        val problem = SlidingWindowMaximum()
+        val problem = FindAnagram()
+//        val problem = SlidingWindowMaximum()
 
         problem.solve()
     }
