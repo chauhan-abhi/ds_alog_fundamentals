@@ -6,7 +6,7 @@ import java.util.Deque
 import java.util.LinkedList
 
 // Sliding Window
-// https://leetcode.com/problems/find-all-anagrams-in-a-string/
+// https://leetcode.com/problems/sliding-window-maximum/description/
 
 class SlidingWindowMaximum : Problem, BaseProblem() {
 
