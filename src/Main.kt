@@ -6,6 +6,7 @@ import linklist.*
 import stack.*
 import trees.*
 import strings.slidingwindow.FindAnagram
+import strings.slidingwindow.FruitInBasket
 import strings.slidingwindow.LongestSubstringWithoutRepeatingCharacters
 import strings.slidingwindow.SlidingWindowMaximum
 
@@ -64,7 +65,8 @@ class Main {
         //val problem = IntegerToWords()
         //val problem = FindAnagram()
         // val problem = SlidingWindowMaximum()
-        val problem = LongestSubstringWithoutRepeatingCharacters()
+        // val problem = LongestSubstringWithoutRepeatingCharacters()
+        val problem = FruitInBasket()
 
         problem.solve()
     }
