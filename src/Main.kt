@@ -4,11 +4,8 @@ import graph.*
 import heap.*
 import linklist.*
 import stack.*
+import strings.slidingwindow.*
 import trees.*
-import strings.slidingwindow.FindAnagram
-import strings.slidingwindow.FruitInBasket
-import strings.slidingwindow.LongestSubstringWithoutRepeatingCharacters
-import strings.slidingwindow.SlidingWindowMaximum
 
 class Main {
     companion object {
@@ -66,7 +63,8 @@ class Main {
         //val problem = FindAnagram()
         // val problem = SlidingWindowMaximum()
         // val problem = LongestSubstringWithoutRepeatingCharacters()
-        val problem = FruitInBasket()
+        // val problem = FruitInBasket()
+        val problem = MinWindowSubstring()
 
         problem.solve()
     }
