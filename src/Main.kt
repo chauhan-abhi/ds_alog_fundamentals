@@ -1,5 +1,6 @@
 import algorithm.binarySearch.SplitLargestSum
 import arrays.matrix.*
+import arrays.medium.Permutations
 import graph.*
 import heap.*
 import linklist.*
@@ -15,9 +16,9 @@ class Main {
         @JvmStatic
         fun main(args: Array<String>) {
             val main = Main()
-            // main.initArrayProblems()
+            main.initArrayProblems()
             // main.initMatrixProblems()
-            main.initStringProblems()
+//            main.initStringProblems()
             // main.initStackProblems()
             // main.initTreeProblems()
             // main.initLinkListProblems()
@@ -143,14 +144,14 @@ class Main {
         //val problem = SubArraySumK()
         //val problem = SearchInRotatedArray()
         //val problem = RangeSearchArray()
-        // val problem = Permutations()
+        val problem = Permutations()
         // val problem = MedianOfTwoArrays()
         //val problem = FirstMissingNumber()
 
         /* ------------------ Binary Search Problems -----------------*/
         // val problem = PeakElement()
         // val problem = AllocateProblem()
-        val problem = SplitLargestSum()
+        //val problem = SplitLargestSum()
 
 
         // Dp problems
