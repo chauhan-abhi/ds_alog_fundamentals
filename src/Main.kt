@@ -1,3 +1,4 @@
+import algorithm.binarySearch.AllocateProblem
 import algorithm.binarySearch.SplitLargestSum
 import arrays.matrix.*
 import arrays.medium.Permutations
@@ -71,7 +72,7 @@ class Main {
     }
 
     private fun initStackProblems() {
-         val problem =  ValidParenthesis()
+        val problem =  ValidParenthesis()
         //val problem =  QueueUsingStack()
         problem.solve()
     }
@@ -144,13 +145,13 @@ class Main {
         //val problem = SubArraySumK()
         //val problem = SearchInRotatedArray()
         //val problem = RangeSearchArray()
-        val problem = Permutations()
+        // val problem = Permutations()
         // val problem = MedianOfTwoArrays()
         //val problem = FirstMissingNumber()
 
         /* ------------------ Binary Search Problems -----------------*/
         // val problem = PeakElement()
-        // val problem = AllocateProblem()
+        val problem = AllocateProblem()
         //val problem = SplitLargestSum()
 
 

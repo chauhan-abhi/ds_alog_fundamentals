@@ -32,8 +32,6 @@ class Permutations: Problem {
 
     private fun permuteWithBackTracking(input: IntArray): List<List<Int>> {
         val result = ArrayList<ArrayList<Int>>()
-        //val visited = BooleanArray(input.size)
-        //permuteHelper(arrayListOf(), visited, result ,input)
         helper(input, 0, result)
         return result
     }
