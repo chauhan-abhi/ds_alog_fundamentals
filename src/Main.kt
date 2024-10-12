@@ -1,11 +1,9 @@
-import algorithm.binarySearch.AllocateProblem
-import algorithm.binarySearch.SplitLargestSum
 import arrays.matrix.*
-import arrays.medium.Permutations
 import graph.*
 import heap.*
 import linklist.*
 import stack.*
+import strings.medium.LargestNumberAtmostKSwaps
 import strings.slidingwindow.*
 import trees.*
 
@@ -145,15 +143,17 @@ class Main {
         //val problem = SubArraySumK()
         //val problem = SearchInRotatedArray()
         //val problem = RangeSearchArray()
-        // val problem = Permutations()
         // val problem = MedianOfTwoArrays()
         //val problem = FirstMissingNumber()
 
         /* ------------------ Binary Search Problems -----------------*/
         // val problem = PeakElement()
-        val problem = AllocateProblem()
+        //val problem = AllocateProblem()
         //val problem = SplitLargestSum()
 
+        /* ------------------ Backtracking Problems -----------------*/
+        val problem = LargestNumberAtmostKSwaps()
+        // val problem = Permutations()
 
         // Dp problems
         //val problem = SubsetSumProblemSet()
@@ -164,6 +164,8 @@ class Main {
         //val problem = LetterCombinationsOfPhone()
 
         problem.solve()
+        //val x = LargestNumberInKSwaps()
+        //x.solve()
     }
 
     fun initGraphProblems() {

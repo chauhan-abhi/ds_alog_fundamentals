@@ -1,18 +1,19 @@
 package arrays.dp
 
+import DP
 import Problem
 
-class LongestCommonSubsequence: Problem {
+class LongestCommonSubsequence : Problem, DP {
 
     private fun computeLcs(x: String, y: String, m: Int, n: Int): Array<IntArray> {
-        val dp = Array(m+1) { IntArray(n+1) }
+        val dp = Array(m + 1) { IntArray(n + 1) }
 
-        for (i in 0 until m+1) {
-            for (j in 0 until n+1) {
+        for (i in 0 until m + 1) {
+            for (j in 0 until n + 1) {
                 when {
                     (i == 0 || j == 0) -> dp[i][j] = 0
-                    x[i-1] == y[j-1] -> dp[i][j] = dp[i-1][j-1] + 1
-                    else ->  dp[i][j] = Math.max(dp[i][j-1], dp[i-1][j])
+                    x[i - 1] == y[j - 1] -> dp[i][j] = dp[i - 1][j - 1] + 1
+                    else -> dp[i][j] = Math.max(dp[i][j - 1], dp[i - 1][j])
                 }
             }
         }

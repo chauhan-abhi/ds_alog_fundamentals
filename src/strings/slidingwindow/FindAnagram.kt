@@ -1,10 +1,11 @@
 package strings.slidingwindow
 
 import Problem
+import SlidingWindow
 
 // Sliding Window
 // https://leetcode.com/problems/find-all-anagrams-in-a-string/
-class FindAnagram : Problem {
+class FindAnagram : Problem, SlidingWindow {
 
     private fun findAnagrams(s: String, p: String): List<Int> {
         val sl = s.length

@@ -2,13 +2,14 @@ package strings.slidingwindow
 
 import BaseProblem
 import Problem
+import SlidingWindow
 import java.util.Deque
 import java.util.LinkedList
 
 // Sliding Window
 // https://leetcode.com/problems/sliding-window-maximum/description/
 
-class SlidingWindowMaximum : Problem, BaseProblem() {
+class SlidingWindowMaximum : Problem, SlidingWindow, BaseProblem() {
 
     private fun maxSlidingWindow(nums: IntArray, k: Int): IntArray {
         val L = nums.size

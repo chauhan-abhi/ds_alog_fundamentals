@@ -1,9 +1,10 @@
 package strings.slidingwindow
 
 import Problem
+import SlidingWindow
 import kotlin.math.max
 
-class FruitInBasket : Problem {
+class FruitInBasket : Problem, SlidingWindow {
 
     private fun totalFruit(fruits: IntArray): Int {
         val L = fruits.size

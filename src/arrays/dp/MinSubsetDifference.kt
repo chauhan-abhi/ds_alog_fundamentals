@@ -1,10 +1,11 @@
 package arrays.dp
 
+import DP
 import Problem
 
 // #Knapsack 0-1
 // https://www.geeksforgeeks.org/partition-a-set-into-two-subsets-such-that-the-difference-of-subset-sums-is-minimum/
-class MinSubsetDifference: Problem {
+class MinSubsetDifference : Problem, DP {
 
     /*
     * To divide nums in two subsets S1, S2

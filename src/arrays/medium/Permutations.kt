@@ -1,20 +1,26 @@
 package arrays.medium
 
+import BackTracking
 import Problem
 
 /*
 * https://leetcode.com/problems/permutations-ii/description/
 * */
-class Permutations: Problem {
+class Permutations : Problem, BackTracking {
 
-    private fun permute(input: IntArray): List<List<Int>>  {
+    private fun permute(input: IntArray): List<List<Int>> {
         val result = ArrayList<ArrayList<Int>>()
         val visited = BooleanArray(input.size)
-        permuteHelper(arrayListOf(), visited, result ,input)
+        permuteHelper(arrayListOf(), visited, result, input)
         return result
     }
 
-    private fun permuteHelper(path: ArrayList<Int>, visited: BooleanArray, result: ArrayList<ArrayList<Int>>, input: IntArray) {
+    private fun permuteHelper(
+        path: ArrayList<Int>,
+        visited: BooleanArray,
+        result: ArrayList<ArrayList<Int>>,
+        input: IntArray
+    ) {
         if (path.size == visited.size) {
             result.add(ArrayList(path))
             return

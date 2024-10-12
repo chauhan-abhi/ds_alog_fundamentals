@@ -1,11 +1,12 @@
 package arrays.dp
 
+import DP
 import Problem
 import kotlin.math.abs
 import kotlin.math.max
 
 // #Knapsack Unbounded
-class UnboundedKnapsackProblems : Problem {
+class UnboundedKnapsackProblems : Problem, DP {
 
     // https://www.geeksforgeeks.org/cutting-a-rod-dp-13/
     private fun rodCutting(price: IntArray, length: IntArray): Int {

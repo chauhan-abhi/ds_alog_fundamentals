@@ -1,15 +1,16 @@
 package arrays.dp
 
+import DP
 import Problem
 
 //https://leetcode.com/problems/letter-combinations-of-a-phone-number/
-class LetterCombinationsOfPhone: Problem {
+class LetterCombinationsOfPhone : Problem, DP {
 
     private fun letterCombinations(digits: String): List<String> {
         val mappingList = arrayOf("", "", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz")
         if (digits.isEmpty()) return emptyList()
         val res = arrayListOf<String>()
-        backtrack(res,  digits.toCharArray(), "", mappingList)
+        backtrack(res, digits.toCharArray(), "", mappingList)
         return res
     }
 

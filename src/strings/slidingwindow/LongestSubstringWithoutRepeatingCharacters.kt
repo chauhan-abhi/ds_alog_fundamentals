@@ -1,11 +1,12 @@
 package strings.slidingwindow
 
 import Problem
+import SlidingWindow
 import kotlin.math.max
 
 // Sliding Window
 // https://leetcode.com/problems/longest-substring-without-repeating-characters/description/
-class LongestSubstringWithoutRepeatingCharacters : Problem {
+class LongestSubstringWithoutRepeatingCharacters : Problem, SlidingWindow {
 
     private fun lengthOfLongestSubstring(s: String): Int {
         val sl = s.length

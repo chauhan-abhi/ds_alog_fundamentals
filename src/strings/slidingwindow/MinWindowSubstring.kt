@@ -1,10 +1,11 @@
 package strings.slidingwindow
 
 import Problem
+import SlidingWindow
 
 // Sliding Window
 // https://leetcode.com/problems/minimum-window-substring/description/
-class MinWindowSubstring : Problem {
+class MinWindowSubstring : Problem, SlidingWindow {
 
     private fun minWindow(s: String, t: String): String {
         val sl = s.length

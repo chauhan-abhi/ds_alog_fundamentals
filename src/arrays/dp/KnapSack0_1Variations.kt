@@ -1,20 +1,23 @@
 package arrays.dp
 
+import DP
 import Problem
 import kotlin.math.abs
 
 //  @Knapsack 0-1
-class KnapSack0_1Variations: Problem {
+class KnapSack0_1Variations : Problem, DP {
 
     private fun subsetSum(nums: IntArray, target: Int): Boolean {
-        val dp = Array(nums.size+1) { BooleanArray(target+1) }
-        for (i in dp.indices) { dp[i][0] = true }
+        val dp = Array(nums.size + 1) { BooleanArray(target + 1) }
+        for (i in dp.indices) {
+            dp[i][0] = true
+        }
 
         for (i in 1 until dp.size) {
             for (j in 1 until dp[0].size) {
-                if (nums[i-1] <= j) {
-                    dp[i][j] = dp[i-1][j-nums[i-1]] || dp[i-1][j]
-                } else dp[i][j] = dp[i-1][j]
+                if (nums[i - 1] <= j) {
+                    dp[i][j] = dp[i - 1][j - nums[i - 1]] || dp[i - 1][j]
+                } else dp[i][j] = dp[i - 1][j]
             }
         }
         return dp[nums.size][target]
