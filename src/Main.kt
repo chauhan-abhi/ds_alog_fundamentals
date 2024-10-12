@@ -1,4 +1,5 @@
 import arrays.matrix.*
+import arrays.medium.NumberWithIncreasingDigits
 import graph.*
 import heap.*
 import linklist.*
@@ -152,7 +153,8 @@ class Main {
         //val problem = SplitLargestSum()
 
         /* ------------------ Backtracking Problems -----------------*/
-        val problem = LargestNumberAtmostKSwaps()
+        // val problem = LargestNumberAtmostKSwaps()
+        val problem = NumberWithIncreasingDigits()
         // val problem = Permutations()
 
         // Dp problems
