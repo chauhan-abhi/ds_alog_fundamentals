@@ -1,5 +1,6 @@
 import arrays.matrix.*
 import arrays.medium.NumberWithIncreasingDigits
+import arrays.medium.RatInMaze
 import graph.*
 import heap.*
 import linklist.*
@@ -154,7 +155,8 @@ class Main {
 
         /* ------------------ Backtracking Problems -----------------*/
         // val problem = LargestNumberAtmostKSwaps()
-        val problem = NumberWithIncreasingDigits()
+        // val problem = NumberWithIncreasingDigits()
+        val problem = RatInMaze()
         // val problem = Permutations()
 
         // Dp problems
