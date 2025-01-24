@@ -6,6 +6,7 @@ import graph.*
 import heap.*
 import linklist.*
 import stack.*
+import strings.easy.ValidPalindrome
 import strings.medium.LargestNumberAtmostKSwaps
 import strings.slidingwindow.*
 import trees.*
@@ -18,9 +19,9 @@ class Main {
         @JvmStatic
         fun main(args: Array<String>) {
             val main = Main()
-            main.initArrayProblems()
+//            main.initArrayProblems()
             // main.initMatrixProblems()
-//            main.initStringProblems()
+            main.initStringProblems()
             // main.initStackProblems()
             // main.initTreeProblems()
             // main.initLinkListProblems()
@@ -48,6 +49,7 @@ class Main {
         // val problem = FirstUniqueCharacter()
         // val problem = RansomNote()
         // val problem = ValidAnagram()
+        val problem = ValidPalindrome()
         // val problem = RomanToInteger()
         // val problem = LongestCommonPrefix()
         // val problem = StrStr()
@@ -67,7 +69,7 @@ class Main {
         // val problem = SlidingWindowMaximum()
         // val problem = LongestSubstringWithoutRepeatingCharacters()
         // val problem = FruitInBasket()
-        val problem = MinWindowSubstring()
+        //val problem = MinWindowSubstring()
 
         problem.solve()
     }
