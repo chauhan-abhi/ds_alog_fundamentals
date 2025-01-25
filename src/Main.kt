@@ -21,11 +21,11 @@ class Main {
             val main = Main()
 //            main.initArrayProblems()
             // main.initMatrixProblems()
-            main.initStringProblems()
+            // main.initStringProblems()
             // main.initStackProblems()
             // main.initTreeProblems()
             // main.initLinkListProblems()
-            // main.initGraphProblems()
+            main.initGraphProblems()
             // main.initHeapProblems()
         }
     }
@@ -177,7 +177,8 @@ class Main {
     }
 
     fun initGraphProblems() {
-        val problem = KeysAndRoom()
+        // val problem = KeysAndRoom()
+        val problem = NumberOfIslands()
         problem.solve()
     }
 
