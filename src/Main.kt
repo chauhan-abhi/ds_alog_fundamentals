@@ -178,7 +178,9 @@ class Main {
 
     fun initGraphProblems() {
         // val problem = KeysAndRoom()
-        val problem = NumberOfIslands()
+        // val problem = NumberOfIslands()
+        // val problem = NumberOfProvince()
+        val problem = DetonateMaximumBomb()
         problem.solve()
     }
 

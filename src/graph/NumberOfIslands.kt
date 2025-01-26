@@ -45,5 +45,4 @@ class NumberOfIslands : DFS {
         println(numIslands(charArray))
 
     }
-    
 }
