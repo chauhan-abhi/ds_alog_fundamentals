@@ -32,7 +32,6 @@ class PathSumII : BaseTreeProblem(), Problem {
         }
         pathSum(root.left, value - root.`val`, ArrayList(path), result)
         pathSum(root.right, value - root.`val`, ArrayList(path), result)
-
     }
 
     override fun getTree() = TreeUtils.getTestTree()

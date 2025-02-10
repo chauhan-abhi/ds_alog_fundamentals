@@ -57,6 +57,9 @@ class UnboundedKnapsackProblems : Problem, DP {
         for (i in 0 until W + 1) {
             dp[0][i] = Int.MAX_VALUE - 1 // prevent overflow when later + 1
         }
+        // special case where 2nd row also has to be filled
+        // Lets say array is 3,4,2  then 3/3  = 1 coin
+        // 4/3 is not possible that means we need infinite 4 to achieve 3.
         for (j in 1 until W + 1) {
             dp[1][j] = if (j % coins[0] == 0) j / coins[0] else Int.MAX_VALUE - 1
         }
@@ -65,7 +68,7 @@ class UnboundedKnapsackProblems : Problem, DP {
             for (j in 0 until W + 1) {
                 if (coins[i - 1] <= j) {
                     // dp[i][j-coins[i-1]]+1 --> means we are taking the coin hence increase number of coin by 1
-                    dp[i][j] = Math.min(dp[i][j - coins[i - 1]] + 1, dp[i - 1][j])
+                    dp[i][j] = Math.min(dp[i][j - coins[i - 1]] + 1, dp[i - 1][j] + 0)
                 } else dp[i][j] = dp[i - 1][j]
             }
         }
@@ -76,8 +79,8 @@ class UnboundedKnapsackProblems : Problem, DP {
     override fun solve() {
         val input1 = intArrayOf(1, 5, 11, 5)
         val input2 = intArrayOf(1, 2, 3, 5)
-        // println(rodCutting(input1, input2))
-        // println(coinChange2(5, intArrayOf(1,2,5)))
+        println(rodCutting(input1, input2))
+        println(coinChange2(5, intArrayOf(1, 2, 5)))
         println(coinChange(11, intArrayOf(1, 2, 5)))
         println(coinChange(0, intArrayOf(1)))
         println(coinChange(3, intArrayOf(2)))

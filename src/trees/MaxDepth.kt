@@ -16,7 +16,7 @@ class MaxDepth : BaseTreeProblem(), Problem {
         return 1 + maxDepth(root.left).coerceAtLeast(maxDepth(root.right))
     }
 
-    fun maxDepthIterative(root: TreeNode?): Int {
+    private fun maxDepthIterative(root: TreeNode?): Int {
         if (root == null) {
             return 0
         }

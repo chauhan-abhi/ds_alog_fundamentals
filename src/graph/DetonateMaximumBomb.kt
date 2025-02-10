@@ -2,6 +2,7 @@ package graph
 
 import DFS
 import java.lang.Integer.max
+import kotlin.math.sqrt
 
 class DetonateMaximumBomb : DFS {
 
@@ -41,8 +42,8 @@ class DetonateMaximumBomb : DFS {
         val (x1, y1, r1) = p1
         val (x2, y2, _) = p2
 
-        val distance = ((x2 - x1) * (x2 - x1)) + ((y2 - y1) * (y2 - y1))
-        return distance <= r1 * r1
+        val distance = sqrt(((x2 - x1) * (x2 - x1)) + ((y2 - y1) * (y2 - y1)).toDouble())
+        return distance <= r1
     }
 
     override fun solve() {

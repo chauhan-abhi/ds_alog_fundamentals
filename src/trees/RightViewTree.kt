@@ -24,9 +24,9 @@ class RightViewTree : BaseTreeProblem(), Problem {
             val size = queue.size
             for (i in 0 until size) {
                 val node = queue.poll()
-                if (i ==0) list.add(node.`val`)
-                if (root.right != null) queue.offer(node.right!!)
-                if (root.left != null) queue.offer(node.left!!)
+                if (i == 0) list.add(node.`val`)
+                if (node.right != null) queue.offer(node.right!!)
+                if (node.left != null) queue.offer(node.left!!)
             }
         }
         return list

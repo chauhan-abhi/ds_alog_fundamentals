@@ -21,8 +21,6 @@ class LowestCommonAncestor: BaseTreeProblem(), Problem {
 
         if (left != null && right != null) return root
         return left?:right
-
-
     }
 
 }
